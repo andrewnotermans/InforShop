@@ -1,3 +1,14 @@
-header{
-    background-color: $color-main;
+.header{
+    background-color: $color-primary;
+    padding: 10px;
+
+    &_icons img{
+        width:20px;
+        height:auto;
+        
+        
+    }
+    
 }
+
+

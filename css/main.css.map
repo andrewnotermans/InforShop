@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AMAA,AAAA,MAAM,CAAA;EACF,gBAAgB,EJDR,OAAe;CIE1B",
+    "mappings": "AMAA,AAAA,OAAO,CAAA;EACH,gBAAgB,ELDL,OAAe;EKE1B,OAAO,EAAE,IAAI;CAWhB;;AATI,AAAD,aAAO,CAAA;EACH,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;CAGd;;AACA,AAAD,YAAM,CAAA;EACF,UAAU,EAAE,UAAU;CACzB;;AAGL,AAAA,GAAG,CAAA;EACC,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;CACd;;AClBD,AAAA,EAAE,CAAA;EACE,eAAe,EAAE,IAAI;CACxB",
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
@@ -11,13 +11,14 @@
         "../sass/layouts/_header.scss",
         "../sass/layouts/_nav.scss",
         "../sass/layouts/_form.scss",
+        "../sass/layouts/_footer.scss",
         "../sass/pages/_commande.scss",
         "../sass/pages/_connexion.scss",
         "../sass/pages/_contact.scss",
         "../sass/pages/_ecran-aoc-gaming.scss",
         "../sass/pages/_inscription.scss",
         "../sass/pages/_mon-panier.scss",
-        "../sass/responsive/_smartphone.scss",
+        "../sass/responsive/_pc.scss",
         "../sass/responsive/_tablet.scss"
     ],
     "names": [],
