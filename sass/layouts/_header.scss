@@ -2,12 +2,18 @@
     background-color: $color-primary;
     padding: 10px;
 
+    &_logo img{
+        background-color: #fff;
+    }
+
     &_icons img{
         width:20px;
         height:auto;
-        
-        
     }
+        
+        
+    
+    
     
 }
 

@@ -3,17 +3,11 @@
   padding: 10px;
 }
 
-.header_icons {
-  width: 20px;
-  height: auto;
+.header_logo img {
+  background-color: #fff;
 }
 
-.header_cart {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-img {
+.header_icons img {
   width: 20px;
   height: auto;
 }
