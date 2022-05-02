@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "AMAA,AAAA,MAAM,CAAA;EACF,gBAAgB,EJDR,OAAe;CIE1B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_functions.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/base/_base.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/layouts/_header.scss",
+        "../sass/layouts/_nav.scss",
+        "../sass/layouts/_form.scss",
+        "../sass/pages/_commande.scss",
+        "../sass/pages/_connexion.scss",
+        "../sass/pages/_contact.scss",
+        "../sass/pages/_ecran-aoc-gaming.scss",
+        "../sass/pages/_inscription.scss",
+        "../sass/pages/_mon-panier.scss",
+        "../sass/responsive/_smartphone.scss",
+        "../sass/responsive/_tablet.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
