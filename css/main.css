@@ -1,13 +1,17 @@
-.header {
-  background-color: #216eb8;
-  padding: 10px;
+.banner_background {
+  background: linear-gradient(45deg, #216eb8, #263686);
+  height: 200px;
 }
 
-.header_logo img {
-  background-color: #fff;
+.banner_background_logo {
+  position: absolute;
+  margin: 10px;
+  background-color: white;
+  z-index: 2;
+  width: 50px;
 }
 
-.header_icons img {
+.banner_background_icons img {
   width: 20px;
   height: auto;
 }
