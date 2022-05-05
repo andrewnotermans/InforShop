@@ -1,27 +1,44 @@
-.banner_background{
+.l-main-header_background{
     background: linear-gradient(45deg, $color-primary,$color-secondary);
     height:200px;
+    width:100%;
 
-    
-    &_logo{
-
+    &_aside{
         position:absolute;
-        margin: 10px;
-        background-color: white;
-        z-index:2;
-        width:50px;
+        margin:0px;
+        margin-left:10px;
+        display: flex;
+        flex-direction: column;
+        
+
+        &_logo{
+
+            position:relative;
+            margin:0px;
+            background: white;
+            max-width:150px;
+           
+        }
+
+        &_logo img{
+            box-sizing: border-box;
+            width:120px;
+        }
+
+        &_icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        &_icons img{
+            position:relative;
+            max-width:40px;
+            height:auto;
+            margin:10px;
+            
+
+        }
     }
-
-      
-        
-        
-    
-    &_icons img{
-    width:20px;
-    height:auto;
-    }      
-    
-    
 }
-
-
