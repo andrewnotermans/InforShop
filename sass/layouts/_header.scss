@@ -1,44 +1,78 @@
-.l-main-header_background{
-    background: linear-gradient(45deg, $color-primary,$color-secondary);
-    height:200px;
-    width:100%;
+.l-main-header{
 
-    &_aside{
-        position:absolute;
-        margin:0px;
-        margin-left:10px;
-        display: flex;
-        flex-direction: column;
-        
+    &_background{
+        background: linear-gradient(45deg, $color-primary,$color-secondary);
+        height:200px;
+        width:100%;
 
-        &_logo{
-
-            position:relative;
+        &_aside{
+            position:absolute;
             margin:0px;
-            background: white;
-            max-width:150px;
-           
-        }
-
-        &_logo img{
-            box-sizing: border-box;
-            width:120px;
-        }
-
-        &_icons{
+            margin-left:10px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-        }
-
-        &_icons img{
-            position:relative;
-            max-width:40px;
-            height:auto;
-            margin:10px;
+            flex-direction: column;
+            box-sizing: content-box;
+            width: 120px;
             
 
+            &_logo{
+
+                position:relative;
+                margin:0px;
+                background: white;
+                width:120px;
+                border-radius: 0 0 25px 25px; 
+                box-sizing: border-box;           
+            }
+
+            &_logo img{
+                position: relative;
+                box-sizing: border-box;
+                width:120px;
+                margin:auto;
+            }
+
+            &_icons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between; 
+            }
+
+            &_icons img{
+                display: flex;
+                position:relative;
+                max-width:40px;
+                height:auto;
+                margin:10px;    
+                
+
+            }
+        }      
+     
+        &_form{
+
+            position:relative;
+            display: flex;
+            margin-top: 20px;
+            box-sizing: content-box;
         }
+
+        &_nav{
+            position:absolute;
+            margin-right: 0;
+            width:50px;
+            height:50px;
+            
+        }
+
+        &_nav ul li{
+
+            display: none;
+        }
+
+
+        
+        
     }
+
 }

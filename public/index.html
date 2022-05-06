@@ -28,17 +28,28 @@
                             <img src="../public/img/user.png"alt="InforShop_user">
                         </div>
                     </div>
+                    <div class="l-main-header_background_form">
+                        <form method="post" action="traitement.php">
+                            <p>
+                                <label for="produit"></label>
+                                <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                            </p>
+                    </div>
+        
                 </div>
             </div>
-            <form class="form_recherche_produit" method="post" action="traitement.php">
-                <p>
-                    <label for="produit"></label>
-                    <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
-                </p>
-            </form>
             
-            <nav>
-                <ul>
+            
+            <nav class="l-main-header_background_nav">
+                <a id="toggle-btn" title="Menu" href="#">
+                    <span class="menu-icon">
+                        ::before
+                        "Menu"
+                        ::after
+
+                    </span>
+                </a>
+                <ul class="l-main">
                     <li>Accueil</li>
                     <li>Produits</li>
                     <li>Contacts</li>
