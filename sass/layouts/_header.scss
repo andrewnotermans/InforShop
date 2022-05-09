@@ -1,9 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
 .l-main-header{
 
-    &_background{
-        background: linear-gradient(45deg, $color-primary,$color-secondary);
-        height:200px;
-        width:100%;
+    
+    background: linear-gradient(45deg, $color-primary,$color-secondary);
+    height:200px;
+    width:100%;        
+
 
         &_aside{
             position:absolute;
@@ -12,7 +20,7 @@
             display: flex;
             flex-direction: column;
             box-sizing: content-box;
-            width: 120px;
+            width: 150px;
             
 
             &_logo{
@@ -36,43 +44,68 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between; 
+                margin-top: 20px;
             }
 
-            &_icons img{
+            &_icons i{
                 display: flex;
                 position:relative;
-                max-width:40px;
-                height:auto;
-                margin:10px;    
+                margin:10px;
+                font-size:1.50rem;
+                color:#fff;
+            } 
                 
 
-            }
+            
         }      
      
         &_form{
 
             position:relative;
             display: flex;
-            margin-top: 20px;
             box-sizing: content-box;
         }
+        
+    #menu-desktop ul li{
 
-        &_nav{
+        display:none;
+    }    
+       
+    #menu-hamburger{
+        position:fixed;
+        width: 1.75rem;
+        height:1.75rem;
+        right:0;
+        margin: 1rem;
+        z-index:3;
+
+        span{
+            display:block;
             position:absolute;
-            margin-right: 0;
-            width:50px;
-            height:50px;
-            
+            height:0.2rem;
+            width:100px;
+            background:#fff;
+            border-radius: 0.15rem;
+            left:0;
+
+            &:nth-child(1){
+                top:0;
+            }
+            &:nth-child(2){
+                top:0.5rem;
+            }
+            &:nth-child(3){
+                top:1rem;
+            }
+
+
         }
 
-        &_nav ul li{
-
+        @media screen and (min-width: $breakpoint-tablet) {
             display: none;
         }
-
-
-        
-        
     }
 
+
 }
+

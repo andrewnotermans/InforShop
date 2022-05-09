@@ -6,57 +6,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/main.css">
-        <script src="https://kit.fontawesome.com/be285570c4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
         <title>InforShop</title>
     </head>
     <body>
-        <header class="l-main-header">
-            <div class="l-main-header_background">
-                <div class="l-main-header_background_aside">
-               
-                    <div class="l-main-header_background_aside_logo">
-                        <img src="../public/img/inforshop.png" alt="InforShop_logo">
-                    </div>
-                    
-                    
-                    <div class="l-main-header_background_aside_icons">
-                        <div class="l-main-header_background_aside_icons_cart">
-                            <img src="../public/img/panier.png" alt="InforShop_mycart">
-                            
-                        </div>
-                        <div class="l-main-header_background_aside_icons_user">
-                            <img src="../public/img/user.png"alt="InforShop_user">
-                        </div>
-                    </div>
-                    <div class="l-main-header_background_form">
-                        <form method="post" action="traitement.php">
-                            <p>
-                                <label for="produit"></label>
-                                <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
-                            </p>
-                    </div>
-        
-                </div>
-            </div>
-            
-            
-            <nav class="l-main-header_background_nav">
-                <a id="toggle-btn" title="Menu" href="#">
-                    <span class="menu-icon">
-                        ::before
-                        "Menu"
-                        ::after
-
-                    </span>
-                </a>
-                <ul class="l-main">
-                    <li>Accueil</li>
-                    <li>Produits</li>
-                    <li>Contacts</li>
-                </ul>
+        <div class="l-main-wrap">
+            <header class="l-main-header">
                 
-            </nav>
-        </header>
+                <div class="l-main-header_aside">
+                    
+                    <div class="l-main-header_aside_logo">
+                            <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                    </div>
+                            
+                            
+                    <div class="l-main-header_aside_icons">
+                        <div class="l-main-header_aside_icons_cart">
+                            <i class="fas fa-user"></i>
+                                    
+                        </div>
+                        <div class="l-main-header_aside_icons_user">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                            
+                        <div class="l-main-header_form">
+                            <form method="post" action="traitement.php">
+                                <p>
+                                    <label for="produit"></label>
+                                    <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                                </p>
+                            </form>
+                
+                        </div>
+                    </div>
+                    
+                    <div id="menu-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div id="menu-desktop" class="l-main-header_background_nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Accueil</a></li>
+                                <li><a href="#">Produits</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                
+                
+            </header>
         <main>
 
         </main>
