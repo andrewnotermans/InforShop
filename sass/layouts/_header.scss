@@ -73,20 +73,22 @@
        
     #menu-hamburger{
         position:fixed;
-        width: 1.75rem;
-        height:1.75rem;
-        right:0;
-        margin: 1rem;
-        z-index:3;
+        width: 40px;
+        height:40px;
+        right:15px;
+        top:30px;
+        
+        
 
         span{
             display:block;
             position:absolute;
             height:0.2rem;
-            width:100px;
+            width:40px;
             background:#fff;
             border-radius: 0.15rem;
             left:0;
+            padding:auto;
 
             &:nth-child(1){
                 top:0;
