@@ -18,36 +18,25 @@
 */
 * {
   margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .l-main-header {
+  position: absolute;
+  width: 100%;
   background: linear-gradient(45deg, #216eb8, #263686);
   height: 200px;
   width: 100%;
+  margin-left: 0px;
 }
 
-.l-main-header_aside {
-  position: absolute;
-  margin: 0px;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  width: 150px;
+.l-main-header .l-main-header-logo, .l-main-header .l-main-header-icons, .l-main-header .l-main-header-form {
+  margin-left: 15px;
 }
 
-.l-main-header_aside_logo {
+.l-main-header .l-main-header-logo {
   position: relative;
-  margin: 0px;
   background: white;
   width: 120px;
   border-radius: 0 0 25px 25px;
@@ -55,15 +44,15 @@
           box-sizing: border-box;
 }
 
-.l-main-header_aside_logo img {
+.l-main-header .l-main-header-logo img {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 120px;
-  margin: auto;
 }
 
-.l-main-header_aside_icons {
+.l-main-header .l-main-header-icons {
+  width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,29 +60,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 20px;
 }
 
-.l-main-header_aside_icons i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin: 10px;
-  font-size: 1.50rem;
-  color: #fff;
+.l-main-header .l-main-header-icons i {
+  color: white;
+  font-size: 20px;
 }
 
-.l-main-header_form {
-  position: relative;
+.l-main-header .l-main-header-icons-cart, .l-main-header .l-main-header-icons-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+}
+
+.l-main-header .l-main-header-form {
+  position: relative;
+}
+
+.l-main-header input {
+  padding: 5px;
 }
 
 .l-main-header #menu-desktop ul li {
