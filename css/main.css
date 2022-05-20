@@ -27,31 +27,26 @@
   width: 100%;
   background: linear-gradient(45deg, #216eb8, #263686);
   height: 200px;
-  width: 100%;
   margin-left: 0px;
 }
 
-.l-main-header .l-main-header-logo, .l-main-header .l-main-header-icons, .l-main-header .l-main-header-form {
+.l-main-header-logo, .l-main-header-icons, .l-main-header-form {
   margin-left: 15px;
 }
 
-.l-main-header .l-main-header-logo {
+.l-main-header-logo {
   position: relative;
   background: white;
   width: 120px;
   border-radius: 0 0 25px 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-.l-main-header .l-main-header-logo img {
+.l-main-header-logo img {
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 120px;
 }
 
-.l-main-header .l-main-header-icons {
+.l-main-header-icons {
   width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,65 +57,66 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.l-main-header .l-main-header-icons i {
+.l-main-header-icons i {
   color: white;
   font-size: 20px;
 }
 
-.l-main-header .l-main-header-icons-cart, .l-main-header .l-main-header-icons-user {
+.l-main-header-icons-cart, .l-main-header-icons-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.l-main-header .l-main-header-form {
+.l-main-header-form {
   position: relative;
+  top: 60px;
+  margin-right: 15px;
 }
 
-.l-main-header input {
+input {
   padding: 5px;
+  width: 100%;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.l-main-header #menu-desktop ul li {
+#menu-desktop ul li {
   display: none;
 }
 
-.l-main-header #menu-hamburger {
+#menu-hamburger {
   position: fixed;
-  width: 40px;
-  height: 40px;
-  right: 15px;
-  top: 30px;
+  width: 80px;
+  height: 80px;
+  right: 0px;
+  top: 0px;
+  background-color: #113a62;
+  border-radius: 0 0 0 3rem;
 }
 
-.l-main-header #menu-hamburger span {
+#menu-hamburger span {
   display: block;
-  position: absolute;
-  height: 0.2rem;
-  width: 40px;
-  background: #fff;
-  border-radius: 0.15rem;
-  left: 0;
-  padding: auto;
+  position: relative;
+  height: 3px;
+  width: 35px;
+  margin: 6px auto;
+  background: #ee7c1d;
+  border-radius: 1.15rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.l-main-header #menu-hamburger span:nth-child(1) {
-  top: 0;
-}
-
-.l-main-header #menu-hamburger span:nth-child(2) {
-  top: 0.5rem;
-}
-
-.l-main-header #menu-hamburger span:nth-child(3) {
-  top: 1rem;
+#menu-hamburger span:first-child {
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .l-main-header #menu-hamburger {
+  #menu-hamburger {
     display: none;
   }
 }
