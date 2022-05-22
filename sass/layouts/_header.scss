@@ -1,10 +1,12 @@
 *{
-    margin:0;
-    box-sizing: content-box;
+    margin: 0;
+    
 }
 
+
+
 .main-header{
-    position: absolute;
+    position: relative;
     width:100%;
     background: linear-gradient(45deg, $color-primary,$color-secondary);
     height:200px;
@@ -15,6 +17,7 @@
     position: relative;
     width: 100%;
     margin-left: 0px;
+    margin-top: 0px;;
 }
             
 .main-header-row__logo, .main-header-row__icons, .main-header-row__form{
@@ -23,7 +26,7 @@
 
 
 .main-header-row__logo{
-    position:relative;
+    position: relative;
     background: white;
     width:120px;
     border-radius: 0 0 25px 25px; 

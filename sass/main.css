@@ -16,11 +16,6 @@
     }
 }
 */
-* {
-  margin: 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
 
 .l-main-wrap-header {
   position: absolute;

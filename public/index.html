@@ -6,67 +6,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
         <title>InforShop</title>
     </head>
     <body>
+        
         <header class="main-header">
-            <div class="main-header-row">
-                
-                <div class="main-header-row__logo">
-                        <img src="../public/img/inforshop.png" alt="InforShop_logo">
-                </div>  
-                        
-                <div class="main-header-row__icons">
-                    <div id="icons-cart">
-                        <i class="fas fa-user"><p>Panier</p></i>
-                        
-                    </div>
-                    <div id="icons-user">
-                        <i class="fas fa-shopping-cart"><p>Compte</p></i>
-                        
+
+            <div class="wrap">
+        
+                <div class="main-header-row">
+                    
+                    <div class="main-header-row__logo">
+                            <img src="../public/img/inforshop.png" alt="InforShop_logo">
                     </div>  
+                            
+                    <div class="main-header-row__icons">
+                        <div id="icons-cart">
+                            <i class="fas fa-user"></i>
+                            <p>Compte</p>
+                            
+                        </div>
+                        <div id="icons-user">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Compte</p>
+                            
+                        </div>  
+                    </div>
+                    
+                    <div class="main-header-row__form">
+                        <form method="post" action="traitement.php">
+                            <p>
+                                <label for="produit"></label>
+                                <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                            </p>
+                        </form>
+                    </div>
+                
                 </div>
                 
-                <div class="main-header-row__form">
-                    <form method="post" action="traitement.php">
-                        <p>
-                            <label for="produit"></label>
-                            <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
-                        </p>
-                    </form>
+                <div class="main-header-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Produits</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+                
+                
+                <div id="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            
             </div>
-            
-            <div class="main-header-nav">
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Produits</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div> 
-            
-            
-            <div id="menu-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header>             
-  
-        <main>
+        </header>      
+            <main>
 
-        </main>
-        <footer>
+            </main>
+            <footer>
 
-        </footer>
+            </footer>
         
     </body>
     

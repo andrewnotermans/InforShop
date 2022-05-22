@@ -1,8 +1,15 @@
 @media screen and (min-width: $breakpoint-tablet) {
-    .main-header-row{
-        max-width: 90%;
+    
+
+    .wrap{
+        position:relative;
+        width:90%;
         margin: 0 auto;
-        display:flex;
+    }
+    .main-header-row{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
         flex-direction: row;
         height: 200px;
         justify-content: space-around;
