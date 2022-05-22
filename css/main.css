@@ -22,24 +22,24 @@
           box-sizing: content-box;
 }
 
-.l-main-wrap-header {
+.main-header {
   position: absolute;
   width: 100%;
   background: linear-gradient(45deg, #216eb8, #263686);
   height: 200px;
 }
 
-.l-main-header {
+.main-header-row {
   position: relative;
   width: 100%;
   margin-left: 0px;
 }
 
-.l-main-header-logo, .l-main-header-icons, .l-main-header-form {
+.main-header-row__logo, .main-header-row__icons, .main-header-row__form {
   margin-left: 15px;
 }
 
-.l-main-header-logo {
+.main-header-row__logo {
   position: relative;
   background: white;
   width: 120px;
@@ -47,12 +47,12 @@
   height: 40%;
 }
 
-.l-main-header-logo img {
+.main-header-row__logo img {
   position: relative;
   width: 120px;
 }
 
-.l-main-header-icons {
+.main-header-row__icons {
   width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,14 +66,14 @@
   margin-top: 10px;
 }
 
-.l-main-header-icons i {
+.main-header-row__icons i {
   color: white;
   font-size: 22px;
   text-align: center;
   text-transform: lowercase;
 }
 
-.l-main-header-icons p {
+.main-header-row__icons p {
   margin-top: 3px;
   color: white;
   font-size: 12px;
@@ -82,11 +82,11 @@
   text-transform: capitalize;
 }
 
-.l-main-header-icons-cart, .l-main-header-icons-user {
+#icons-cart, #icons-cart {
   display: block;
 }
 
-.l-main-header-form {
+.main-header-row__form {
   position: relative;
   top: 40px;
   margin-right: 15px;
@@ -100,7 +100,7 @@ input {
           box-sizing: border-box;
 }
 
-.l-main-header-nav ul li a {
+.main-header-nav {
   display: none;
 }
 
@@ -141,7 +141,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .l-main-header {
+  .main-header-row {
     max-width: 90%;
     margin: 0 auto;
     display: -webkit-box;
@@ -151,56 +151,77 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 200px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
-  .l-main-header-logo, .l-main-header-icons, .l-main-header-form {
-    top: 0;
+  .main-header-row__logo, .main-header-row__icons, .main-header-row__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    top: 0;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
-  .l-main-header-form {
+  .main-header-row__form {
     width: 60%;
   }
-  input {
-    position: absolute;
-    max-width: 100%;
+  .main-header-row__form p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    width: 100%;
+  }
+  .main-header-row__form input {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-}
-
-.l-main-header-icons {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.l-main-header-nav {
-  position: absolute;
-  display: inline;
-  margin-left: 30px;
-  margin-top: 160px;
-}
-
-.l-main-header-nav ul li {
-  display: inline;
-  position: relative;
-}
-
-.l-main-header-nav ul li a {
-  display: inline;
-  color: white;
-  padding: 10px;
+  .main-header-row__icons {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .main-header-nav {
+    display: inline;
+    width: 100%;
+    margin-top: -40px;
+    position: absolute;
+  }
+  nav {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: inline;
+    margin: 20px;
+  }
+  nav ul li:first-child {
+    margin-left: 0px;
+  }
+  nav ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: red;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .l-main-header {
+  .main-header-row {
     max-width: 60%;
     margin: 0 auto;
   }

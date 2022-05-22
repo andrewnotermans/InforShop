@@ -1,6 +1,10 @@
 @media screen and (min-width: $breakpoint-desktop){
-    .l-main-header{
+    .main-header-row{
         max-width: 60%;
         margin: 0 auto;
     }
+    nav{
+        position: relative;
+        max-width: 90%;
+        margin: 0 auto;
 }

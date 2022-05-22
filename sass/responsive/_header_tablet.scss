@@ -1,59 +1,93 @@
 @media screen and (min-width: $breakpoint-tablet) {
-    .l-main-header{
+    .main-header-row{
         max-width: 90%;
         margin: 0 auto;
         display:flex;
         flex-direction: row;
-        
+        height: 200px;
         justify-content: space-around;
+        align-items: baseline;
+        
     }
 
-    .l-main-header-logo, .l-main-header-icons, .l-main-header-form{
-        top:0;
+    .main-header-row__logo, .main-header-row__icons, .main-header-row__form{
+        
         display: flex;
         margin:0;
-        align-items: center;
-    }
-    
-    .l-main-header-form{
-        width: 60%;
+        top:0;
+        align-self: baseline;
         
-        
+
     }
 
-    input{
+  
+
+    
+    .main-header-row__form{
+        width:60%;
+
+        & p{
+            display: flex;
+            align-content: flex-start;
+            width:100%;
+        }
+
+        & input{
         
-        position: absolute;
-        max-width:100%;
-        
+        position: relative;
+        width:100%;
+        display: flex;
         box-sizing: border-box;
 
-        
         }
+   
     }
+
     
 
     
-    .l-main-header-icons{
+    .main-header-row__icons{
         order:3;
     }
-    .l-main-header-nav{
+    
+    .main-header-nav{
+        display: inline;
+        width: 100%;
+        margin-top:-40px;
         position: absolute;
-        display: inline;
-        margin-left: 30px;
-        margin-top:160px;
-    }
-
-    .l-main-header-nav ul li{
-        display: inline;
-        position: relative;
         
-
-        & a{
-            display:inline;
-            color:white;
-            padding:10px;
+        
         }
-       
+    nav{
+        position: relative;
+        max-width: 60%;
+        margin: 0 auto;
+
+    
+        & ul li{
+            display: inline;
+            margin: 20px;
+            
+
+            &:first-child{
+                margin-left: 0px;
+            }
+
+            & a{
+                color:white;
+                padding: 10px;
+                text-decoration: none;
+                
+    
+                &:hover{
+                    color:red;
+                    
+                    
+                }
+            }
+        }
+
+        
         
     }
+}
