@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
-    <title>Inscription</title>
+    <title>Connexion</title>
 </head>
 <body>
     <header class="main-header">
@@ -61,52 +61,33 @@
             </div>
         </div>
     </header>
-
-
     <main class="main-content">
         <div class="wrap">
             <div class="main-content-nav">
                 <div id="buttons-home">
                     <i class="fas fa-home"></i>
                 </div>
-                
                 <div id="buttons-current">
-                    <h3>Inscription</h3>
+                    <h3>Connexion</h3>
                 </div>
             </div>
             <div class="main-content-form">
-                <form class="form-inscription" method="post" action="traitement.php">
+                <form class="form-connexion" method="post" action="traitement.php">
                     <fieldset>
-                        <legend>Inscription</legend>
+                        <legend>Connexion</legend>
 
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder=""/>
-
+                    
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" />
-
-                        <label for="prenom">Prénom</label>
-                        <input type="text" name="prenom" id="prenom" />
-
-                        <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="nom" />
-
-                        <label for="datenaissance">Date de naissance</label>
-                        <input type="date" name="datenaissance" id="datenaissance" />
-
-                        <label for="acceptCgv">"J'ai lu et j'accepte les CVG"</label>
-                        <input type="checkbox" name="acceptCgv"id="acceptCvg"/>
-
-                        
-                        <input type="button" name="submit" id="submit" value="Inscription"/>
-
                     </fieldset>
                 </form>
             </div>
 
-            </div>
         </div>
-          
     </main>
+
+    
 </body>
 </html>
