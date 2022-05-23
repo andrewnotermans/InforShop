@@ -7,6 +7,7 @@
 @import "./layouts/nav";
 @import "./layouts/form";
 @import "./layouts/footer";
+@import "./layouts/main-content";
 @import "./composants/commande";
 @import "./composants/connexion";
 @import "./composants/contact";
@@ -16,3 +17,5 @@
 @import "./responsive/responsive";
 @import "./responsive/header_tablet";
 @import "./responsive/header_pc";
+@import "./responsive/main-content-tablet";
+@import "./responsive/main-content-pc";

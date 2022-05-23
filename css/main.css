@@ -148,6 +148,13 @@ li {
   list-style-type: none;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(45deg, #263686, #216eb8);
+  height: 200px;
+}
+
 .main-content {
   background-color: #e4e4e4;
   margin: 0 auto;
