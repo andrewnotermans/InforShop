@@ -66,24 +66,24 @@
     <main class="main-content">
         <div class="wrap">
             <div class="main-content-nav">
-                <div id="buttons-home">
+                <a id="buttons-home" href="index.html">
                     <i class="fas fa-home"></i>
-                </div>
-                
+                </a>
+            
                 <div id="buttons-current">
-                    <h3>Inscription</h3>
+                    <h3><a href="#">Inscription</a></h3>
                 </div>
             </div>
             <div class="main-content-form">
-                <form class="form-inscription" method="post" action="traitement.php">
+                <form class="form-submit" method="post" action="traitement.php">
                     <fieldset>
-                        <legend>Inscription</legend>
-                        <div class="form-inscription-column">
+                        <legend class="form-title">Inscription</legend>
+                        <div class="form-column">
                             <div class="l-form-border">
                                 <label for="email">Email</label>
                                 <input type="email" name="email" id="email" placeholder=""/>
                             </div>
-                            <div class="form-inscription-row">
+                            <div class="form-row">
                                 <div class="l-form-border">
                                     <label for="password">Password</label>
                                     <input type="password" name="password" id="password" />
@@ -93,7 +93,7 @@
                                     <input type="password" name="password" id="password" />
                                 </div>
                             </div>
-                            <div class="form-inscription-row">
+                            <div class="form-row">
                                 <div class="l-form-border">
                                     <label for="prenom">Prénom</label>
                                     <input type="text" name="prenom" id="prenom" />
@@ -113,8 +113,11 @@
                             </div>
                         </div>
                         <div class="form-button-submit">
-                            <input type="button" name="submit" id="submit" value="Inscription"/>
+                            <form>
+                                <input type="button" name="submit" id="submit" value="Inscription" action="traitement.php"/>
+                            </form>
                         </div>
+                        
 
                             
                         

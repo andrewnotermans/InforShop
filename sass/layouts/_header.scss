@@ -34,13 +34,13 @@
     background: white;
     width:120px;
     border-radius: 0 0 25px 25px; 
-    height:40%;
+    
       
 }
 
 .main-header-row__logo img{
     position: relative;
-    
+    margin-top: 10px;
     width:120px;
     
 }
@@ -99,6 +99,7 @@
     
         padding:5px;
         text-align: left;
+        border:none;
         border-radius: 3px;
         box-sizing: border-box;
         

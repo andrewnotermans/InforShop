@@ -27,24 +27,24 @@
                     </div>
                     <div id="icons-user">
                         <i class="fas fa-shopping-cart"></i>
-                        <p>Panier</p>
+                        <p>Compte</p>
                         
                     </div>  
                 </div>
                 
                 <div class="main-header-row__form">
                     <form method="post" action="traitement.php">
-                        <p>
+                        
                             <label for="produit"></label>
                             <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
-                        </p>
+                        
                     </form>
                 </div>
             
             </div>
             
             <div class="main-header-nav">
-                <nav>
+                <nav class="nav-flex-row">
                     <ul>
                         <li><a href="#">Accueil</a></li>
                         <li><a href="#">Produits</a></li>
@@ -52,42 +52,69 @@
                     </ul>
                 </nav>
             </div> 
-            
-            
-            <div id="menu-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
-    </header>
+            
+        <div id="menu-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+    </header>      
+    
     <main class="main-content">
         <div class="wrap">
             <div class="main-content-nav">
-                <div id="buttons-home">
+                <a id="buttons-home" href="index.html">
                     <i class="fas fa-home"></i>
-                </div>
+                </a>
+            
                 <div id="buttons-current">
-                    <h3>Connexion</h3>
+                    <h3><a href="#">Connexion</a></h3>
                 </div>
             </div>
+          
             <div class="main-content-form">
-                <form class="form-connexion" method="post" action="traitement.php">
+                <form class="form-submit" method="post" action="traitement.php">
                     <fieldset>
-                        <legend>Connexion</legend>
+                        <legend class="form-title">Connexion</legend>
+                        <div class="form-column--fullwrap">
+                            <div class="l-form-border--fullwrap">
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Email"/>
+                            </div>
+                        
+                        
+                            <div class="l-form-border--fullwrap">    
+                                <label for="password"></label>
+                                <input type="password" name="password" id="password" placeholder="Password" />
+                            </div>
+                        </div>
+                        <div class="form-button-submit">
+                            <input type="button" name="submit" id="submit" value="Connexion" action="traitement.php"/>
+                        </div>
+                        <div class="form-button-link">
+                            <h2><a href="inscription.html">Inscription</a></h2>
+                            
+                        </div>
+                        <div class="google-button"> 
+                            <a href="#" id="google-button">
+                            <img src="./img/1534129544.svg">
+                            <h4>Connexion Google</h4>
+                            </a>
+                            
+                        </div>
 
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder=""/>
-                    
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" />
                     </fieldset>
                 </form>
             </div>
 
         </div>
     </main>
+    <footer>
 
-    
+    </footer>
+
+
 </body>
 </html>
