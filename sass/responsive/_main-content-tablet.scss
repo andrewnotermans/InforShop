@@ -1,2 +1,29 @@
 @media screen and (min-width: $breakpoint-tablet) {
+    .form-inscription-column{
+        width: 100%
+    }
+
+
+    .form-inscription-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        
+    }
+
+    .l-form-border{
+        width: 47%;
+        
+        
+        
+        & input{
+            width:100%;
+            
+        }
+
+        
+    }
+    
 }

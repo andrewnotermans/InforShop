@@ -50,38 +50,27 @@
     
 }
 
-.form-inscription{
-    
-    
-    top: 15px;
-    position: relative;
-    box-sizing: border-box;
-}
 
 fieldset{
-    border:none;
+    border: none;
+}
+.form-inscription{
+    
+    top: 15px;
+    width: 100%;
+    box-sizing: border-box;
     padding-block-start: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
-    box-sizing: border-box;
     background-color: white;
     padding-block-end: 15px;
-    min-inline-size: min-content;
-    
+
+
+
     & legend{
         
-        padding-top:60px;
-    }
-
-    & input{
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 1px blue solid;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        max-width:100%;
-
+        padding-top:40px;
     }
 
     & #submit{
@@ -91,19 +80,49 @@ fieldset{
         box-sizing: content-box;
     }
 
-    
-    
 
- }
- 
 
- label {
-    margin-top:15px;
+}
+
+.form-inscription-column{
     display: flex;
-    max-width: 100%;
-    
-    
+    width:100%;
+    flex-direction: column;
+
+
+}
+
+
+.l-form-border{
+    display: flex;
+    flex-direction: column;
+
+
+    & label {
+        padding-top:25px;
+        display: flex;
+
     }
+
+    & input{
+        
+        border: none;
+        border-bottom: 1px blue solid;
+        
+        
+        width: 100%;
+        
+
+    }
+
+  
+
+    
+}
+
+    
+
+
 
 
 
