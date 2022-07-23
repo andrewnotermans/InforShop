@@ -1,7 +1,4 @@
-.fieldset-filter, h3{
-    color:$color-primary;
-    font-weight: bold;
-}
+
 
 .l-main-content__form--filter{
     padding:15px;
@@ -94,13 +91,22 @@
 
 
 .grid-box-item__button-cart{
+    position: relative;
     background-color: $color-secondary;
-    display: inline-block;
+    display: block;
     border-radius: 5px;
-
+    width:50px;
+    margin-right: 15px;
+    float: right;
+    
+    
+    
+    
     & i{
+        
         padding:5px 15px 5px 10px;
         color: white;
+        
     }
 }
 

@@ -2,6 +2,7 @@
     position: relative;
     margin-top: 20px;
     height:35px;
+    margin-bottom: 20px;
     
 }
 
@@ -11,6 +12,7 @@
     line-height: 35px;
     text-align: center;
     background-color: white;
+    
 }
 
 
@@ -21,17 +23,9 @@
     
  
 }
-#buttons-home i{
-    padding-right: 15px;
-    padding-left: 15px;
-    
-}
 
-#buttons-current h3{
-    padding-right: 30px;
-    padding-left: 30px;
-    
-}
+
+
 
 
 
@@ -44,6 +38,12 @@
 #buttons-current h3 {
 
     color:black;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing:inherit;
+    
+    
+    font-size: 12px;
     &:hover{
         color: $color-primary;
         text-decoration: underline $color-primary;
@@ -52,6 +52,20 @@
     
 }
 
+#buttons-home i{
+
+    color:$color-primary;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing:inherit;
+    
+    
+    font-size: 12px;
+    &:hover{
+        color: $color-secondary;
+        
+    }
+}
 
 .t-form-main__link-button{
 
