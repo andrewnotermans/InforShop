@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Commande</title>
+</head>
+<body>
+    <header class="l-main-header">
+
+        <div class="wrap">
+    
+            <div class="wrap-header-desktop">
+                
+                <div class="l-main-header__logo">
+                    <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                </div>  
+                        
+                <div class="l-main-header__icons">
+                    <a href="./connexion.html" id="icons-cart">
+                        
+                        <i class="fas fa-user"></i>
+                        <p>Compte</p>
+                    </a>
+                        
+                    
+                    <a href="./panier.html" id="icons-user">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Panier</p>
+                        
+                    </a>  
+                </div>>
+                
+                <div class="l-main-header__search">
+                    <form method="post" action="traitement.php">
+                        
+                        <label for="produit"></label>
+                        <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                        
+                    </form>
+                </div>
+            
+            </div>
+            
+            <div class="l-main-header__nav">
+                <nav class="nav-header-desktop">
+                    <ul class="nav-header-desktop-menu">
+                        <li class="menu-item"><a href="index.html">Accueil</a></li>
+                        <li class="menu-item"><a href="listeproduits.html">Produits</a></li>
+                        <li class="menu-item"><a href="contactus.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                
+            </div> 
+            <div class="background-menu-hamburger">
+                <div id="menu-btn">
+                    <div id="menu-btn__burger"></div>
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+        
+    </header>  
+    
+
+    <main class="l-main-content">
+        <div class="wrap">
+            <div class="l-main-content__nav">
+                <a id="buttons-home" href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+                
+                <span class="nav-chevron"> > </span>
+                <div id="buttons-current">
+                    <a href="panier.html"><h3>Mon panier</h3></a>
+                </div>
+                <span class="nav-chevron"> > </span>
+                
+                <div id="buttons-current">
+                    <h3>Commande</h3>
+                </div>
+            </div>
+            <div class="l-main-content__form">
+                <form id="t-form-main" method="post" action="traitement.php">
+                    
+                    <h1 class="page-title">Commande</h1>
+                    <fieldset> 
+                        <legend>Adresse de livraison</legend>
+
+                        <div class="t-form-main">
+                            <div class="t-form-main--row">
+                                <div class="t-form-main__border">
+                                    <label for="rue-livraison">Rue*</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-home"> </i>
+                                        <input class="input-field" type="text" name="rue" id="rue-livraison" placeholder="Rue" required/> 
+                                       
+                                    </div>                                
+                                                                 
+                                </div>
+                                <div class="t-form-main__border">
+                                    <label for="numero-liv">Numéro de maison*</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-tag"></i>
+                                        <input class="input-field" type="text" name="numero" id="numero-liv" placeholder="Numéro de maison" required/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-form-main--row">
+                                <div class="t-form-main__border">
+                                    <label for="localite-liv">Localité*</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-city"></i>
+                                        <input class="input-field" type="text" name="localite" id="localite-liv" placeholder="Localité" required/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="t-form-main__border">
+                                    <label for="postal-liv">Code postal*</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-city"></i>
+                                        <input class="input-field" type="text" name="postal" id="postal-liv" placeholder="Code postal" required/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-form-main__border">
+                                <label for="pays-liv">Pays*</label>
+                                <select name="pays" id="pays-liv">
+                                    <option value="france">France</option>
+                                    <option value="espagne">Espagne</option>
+                                    <option value="italie">Italie</option>
+                                    <option value="royaume-uni">Royaume-Uni</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="etats-unis">États-Unis</option>
+                                    <option value="chine">Chine</option>
+                                    <option value="japon">Japon</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset> 
+                        <legend>Adresse de facturation</legend>
+
+                        <div class="t-form-main">
+                            <div class="t-form-main--row">
+                                <div class="t-form-main__border">
+                                    <label for="rue-livraison">Rue</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-home"> </i>
+                                        <input class="input-field" type="text" name="rue" id="rue-livraison" placeholder="Rue"/> 
+                                       
+                                    </div>                                
+                                                                 
+                                </div>
+                                <div class="t-form-main__border">
+                                    <label for="numero-liv">Numéro de maisson</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-tag"></i>
+                                        <input class="input-field" type="text" name="numero" id="numero-liv" placeholder="Numéro de maison"/>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-form-main--row">
+                                <div class="t-form-main__border">
+                                    <label for="localite-liv">Localité</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-city"></i>
+                                        <input class="input-field" type="text" name="localite" id="localite-liv" placeholder="Localité"/>
+                                    
+                                    </div>
+                                </div>
+                                <div class="t-form-main__border">
+                                    <label for="postal-liv">Code postal</label>
+                                    <div class="input-icons">
+                                        <i class="fas fa-city"></i>
+                                        <input class="input-field" type="text" name="postal" id="postal-liv" placeholder="Code postal"/>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-form-main__border">
+                                <label for="pays-liv">Pays</label>
+                                <select name="pays" id="pays-liv">
+                                    <option value="france">France</option>
+                                    <option value="espagne">Espagne</option>
+                                    <option value="italie">Italie</option>
+                                    <option value="royaume-uni">Royaume-Uni</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="etats-unis">États-Unis</option>
+                                    <option value="chine">Chine</option>
+                                    <option value="japon">Japon</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>             
+                    <fieldset>
+                        <legend>Moyen de paiement</legend>
+                        <div class="t-form-main__border">
+                            <label for="paiement">Moyen de paiement</label>
+                            <select name="paiement" id="paiement">
+                                <option value="Bancontact">Bancontact</option>
+                                <option value="Mastercard">Mastercard</option>
+                                <option value="Paypal">PayPal</option>
+                                
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div class="t-form-main__submit-button">
+                        
+                        <input type="button" name="submit" id="submit" value="Valider" />
+                        
+                    </div>
+   
+                </form>
+                
+                
+            </div>
+
+            
+        </div>
+          
+    </main>
+    <footer class="l-main-footer">
+        <div class="wrap">
+            <div class="main-footer__title">
+                <p>Inforshop</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

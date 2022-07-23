@@ -1,0 +1,111 @@
+.l-main-content__nav{
+    position: relative;
+    margin-top: 20px;
+    height:35px;
+    
+}
+
+#buttons-home, #buttons-current{
+    height:35px;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    background-color: white;
+}
+
+
+#buttons-home > i, #buttons-current > h3{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    
+ 
+}
+#buttons-home i{
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+#buttons-current h3{
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+
+
+.nav-chevron{
+    color: $color-tertiary;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#buttons-current h3 {
+
+    color:black;
+    &:hover{
+        color: $color-primary;
+        text-decoration: underline $color-primary;
+    }
+    
+    
+}
+
+
+.t-form-main__link-button{
+
+    margin-left: 15px;
+    padding-bottom: 25px;
+    display: inline-block;
+    
+
+
+    & a{
+        background-color: $color-secondary;
+        padding: 8px 15px;
+        border-radius: 4px;
+        color: white;
+        display: inline-block;
+    }
+}
+
+
+
+.google-button   {
+   
+    
+    display: inline-block;
+    
+    
+        
+        & #google-button{
+            
+            display: inline;            
+            border: 1px $color-secondary solid;
+            border-radius: 5px;
+            padding: 8px 15px;
+            & img {
+                height:16px;
+                vertical-align: baseline;
+            }
+            
+            
+        }
+
+
+            
+    
+        & img, h4{
+                
+            
+            width: auto;
+            display: inline-block;
+            vertical-align:text-top;
+            
+           
+        }
+    
+        
+    }
+  

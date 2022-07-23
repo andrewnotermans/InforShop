@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ecran AOC Gaming</title>
+</head>
+<body>
+    <header class="l-main-header">
+
+        <div class="wrap">
+    
+            <div class="wrap-header-desktop">
+                
+                <div class="l-main-header__logo">
+                    <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                </div>  
+                        
+                <div class="l-main-header__icons">
+                    <a href="./connexion.html" id="icons-cart">
+                        
+                        <i class="fas fa-user"></i>
+                        <p>Compte</p>
+                    </a>
+                        
+                    
+                    <a href="./panier.html" id="icons-user">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Panier</p>
+                        
+                    </a>  
+                </div>
+                
+                <div class="l-main-header__search">
+                    <form method="post" action="traitement.php">
+                        
+                        <label for="produit"></label>
+                        <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                        
+                    </form>
+                </div>
+            
+            </div>
+            
+            <div class="l-main-header__nav">
+                <nav class="nav-header-desktop">
+                    <ul class="nav-header-desktop-menu">
+                        <li class="menu-item"><a href="index.html">Accueil</a></li>
+                        <li class="menu-item"><a href="listeproduits.html">Produits</a></li>
+                        <li class="menu-item"><a href="contactus.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                
+            </div> 
+            <div class="background-menu-hamburger">
+                <div id="menu-btn">
+                    <div id="menu-btn__burger"></div>
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+        
+    </header>        
+    <main class="l-main-content">
+        <div class="wrap">
+            <div class="l-main-content__nav">
+                <a id="buttons-home" href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+                <span class="nav-chevron"> > </span>
+
+                <a id="buttons-current" href="./listeproduits.html">
+                    <h3>Pc de bureau</h3>
+                </a>
+                <span class="nav-chevron"> > </span>
+                <a id="buttons-current" href="./descriptionpc.html" >
+                    <h3>Ecran AOC Gaming</h3>
+                </a>
+            </div>
+            <div class="l-main-content__form">
+                <form class="form-template" method="post" action="traitement.php">
+                    
+                    <legend class="page-title">Commande</legend>
+                    <h1 class="product-title">Ecran AOC Gaming 144hz</h1>
+                    <div class="flex-product-presentation">
+                        
+                        <div class="flex-product-presentation__image">
+                            
+                            <img id="product-image" src="./img/ecrangaming.jpg">
+                        </div>
+                        <div class="flex-product-presentation__description">
+                            <div class="half-flex-column-2">
+                                <h2>Description</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, quae soluta. Dolore officiis consectetur, dolor fugit ducimus blanditiis placeat alias quas laborum. Dicta iusto expedita voluptatibus iure error voluptates distinctio quisquam animi culpa, sint omnis quos. Molestiae accusantium ratione quis dolorem magnam repudiandae, harum ut error doloremque beatae qui provident aspernatur? Tempora dolorum commodi dicta possimus ullam impedit recusandae saepe necessitatibus, pariatur corporis tenetur enim doloribus fugiat explicabo eius expedita excepturi. Architecto, ab. Optio et voluptatibus nulla magni illum reprehenderit inventore nesciunt repellat quas. Deleniti necessitatibus sapiente veritatis corrupti est quidem adipisci esse laborum dolore! Praesentium porro minima optio cupiditate necessitatibus accusamus, dignissimos aperiam obcaecati tempora eum, iure provident ducimus dolorem, veritatis officia molestias. Eligendi, numquam nemo. Aut quas sit quasi. Possimus consequuntur quidem doloribus vel sequi fugiat debitis eum quas optio blanditiis, assumenda laudantium ducimus sed perspiciatis magnam esse deserunt delectus quia corporis! Minus rem provident laudantium totam dignissimos?</p>
+                                <div class="item-cart-flex">
+                                    
+                                    <ul>
+                                        <li class="price">395 €</li>
+                                        <li class="text">15 en stock</li>
+                                        <li class="add-quantity">
+                                            <form class="l-form-number">
+                                                <input type="number" step="1" value="0" min="0" max="15">
+                                                <div id="cart-button">
+                                                    <p>Ajouter au panier</p>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        
+                                        <li class="text">noir</li>
+                                    </ul>
+                                    
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="l-main-footer">
+        <div class="wrap">
+            <div class="l-main-footer__title">
+                <p>Inforshop</p>
+            </div>
+        </div>
+        
+    </footer>

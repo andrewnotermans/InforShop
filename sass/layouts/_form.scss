@@ -1,0 +1,137 @@
+
+
+.t-form-main__submit-button{
+    margin-left: 15px;
+    
+}
+
+.l-main-content__form, .l-main-content__form--filter{
+    background-color: white;
+    margin-top:20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px grey ;
+    
+    
+    
+    
+
+    & h3{
+        font-size: 16px;
+        color:$color-primary;
+        
+    }
+    
+    
+}
+
+
+
+.t-form-main__submit-button{
+    padding-bottom:20px;
+    margin-top: 15px;
+    
+
+    & input{
+        background-color: rgb(168, 174, 206);
+        padding:8px 15px;
+        border:none;
+        border-radius: 3px;
+        color:white;
+        display: inline-block;
+
+    }
+    
+}
+
+
+          
+
+.t-form-main__border, .t-form-main__border--desktop{
+    
+    margin:  15px;
+
+    & .input-icons{
+        
+        width:100%;
+        position: relative;
+        padding-top: 15px;
+    }
+
+    & .input-field {
+    
+        width:100%;
+        border: none;
+        border-bottom:$color-primary 1px solid;
+       
+        text-align: left;
+        
+        
+    }
+
+    & .input-icons i{
+        position: absolute;
+        text-align: right;
+        width: 100%;
+        color:grey;
+       
+        
+    }
+
+    
+
+   
+    
+
+    
+
+    
+
+    
+
+    
+}
+
+fieldset{
+    border:none;
+}
+
+legend{
+    color:$color-primary;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+
+
+
+@media screen and (min-width: $breakpoint-tablet) {
+
+    .page-title, .t-form-main__submit-button{
+        margin-left: 15px;
+        
+    }
+
+    .t-form-main__border{
+        width: 100%
+    }
+
+
+    .t-form-main--row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        
+    }
+
+    .t-form-main__border{
+        width: 45%;
+
+        
+    }
+
+    
+    
+}

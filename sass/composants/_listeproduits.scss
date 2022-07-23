@@ -1,0 +1,140 @@
+.fieldset-filter, h3{
+    color:$color-primary;
+    font-weight: bold;
+}
+
+.l-main-content__form--filter{
+    padding:15px;
+}
+.wrap-form-template{
+    margin-left: 15px;
+}
+
+
+.t-form-filter__range input{
+    border:none;
+    border-bottom:1px $color-primary solid;
+    margin:5px 0;
+}
+.t-form-filter__checkbox, .t-form-filter__range {
+    display: flex;
+    flex-direction: column;
+    margin:20px 0;
+
+    
+}
+
+.nav-pagination{
+    position: relative;
+    margin-top: 32px;
+    
+}
+
+.nav-pagination ul{
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-inline-start: 10px;
+    
+    
+    
+    
+
+    
+}
+
+
+.nav-pagination li{
+    
+    margin-right:5px;
+    display: block;
+
+    
+    
+
+    & .page-link{
+        
+        border:1px $color-primary solid;
+        background-color: white;
+        color:$color-primary;
+        padding:10px 15px;
+
+        
+    }
+}
+
+.row{
+    margin-top: 40px;
+}
+.grid-box-item{
+    background-color: white;
+    
+    width: 100%;
+    box-sizing: border-box;
+   
+    position: relative;
+    
+    
+}
+
+.l-main-content__grid{
+    padding:10px;
+    
+}
+
+.box-wrap{
+    margin-left: 15px;
+    right:30px;
+    padding-bottom: 15px;
+    
+}
+
+
+
+.grid-box-item__button-cart{
+    background-color: $color-secondary;
+    display: inline-block;
+    border-radius: 5px;
+
+    & i{
+        padding:5px 15px 5px 10px;
+        color: white;
+    }
+}
+
+.grid-box-item__image{
+    width: 50%;
+    margin: auto;
+    padding:15px;
+}
+
+.grid-box-item, img{
+    width: 100%;
+    height:auto;
+    
+}
+
+.grid-box-item__name, .grid-box-item__type, .grid-box-item__stock, .grid-box-item__price{
+    margin-bottom: 5px;
+}
+
+.grid-box-item__name{
+    color:$color-primary;
+    text-decoration: underline;
+}
+
+.grid-box-item__price{
+    color:$color-tertiary;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: $breakpoint-desktop){
+    .l-main-content__form--filter{
+        width:250px;
+        margin-right: 10px;
+        float:left;
+    }
+}

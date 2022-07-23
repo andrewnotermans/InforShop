@@ -1,0 +1,46 @@
+tr,td{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    
+    
+}
+
+thead{
+    color: $color-primary;
+    font-weight: bold;
+    
+}
+
+thead tr{
+    border-bottom: 1px $color-primary solid;
+}
+
+tbody tr {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.m-tab-cart{
+    width:100%;
+    padding:15px;
+}
+
+
+tfoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px $color-primary solid;
+}
+tfoot tr{
+    display: flex;
+    flex-direction: column;
+    
+    & td{
+        margin:10px 0;
+    }
+}
+
+

@@ -3,64 +3,59 @@
     
 }
 
-.wrap{
-    width:95%;
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
-}
 
 
-.main-header{
+
+.l-main-header{
     position: relative;
     width:100%;
     background: linear-gradient(45deg, $color-primary,$color-secondary);
-    height: auto;
+    
 }
 
-.main-header-row{
+.wrap-header-desktop{
 
     position: relative;
     width: 100%;
-    margin-left: 0px;
-    margin-top: 0px;;
+    
 }
             
 
 
 
-.main-header-row__logo{
+.l-main-header__logo{
     position: relative;
     background: white;
     width:120px;
+    height:90px;
     border-radius: 0 0 25px 25px; 
     
       
 }
 
-.main-header-row__logo img{
+.l-main-header__logo img{
     position: relative;
-    margin-top: 10px;
+    margin:auto;
     width:120px;
     
 }
 
-.main-header-row__icons {
+.l-main-header__icons {
     width: 120px;
     display: flex;
+    margin-top: 25px;
     flex-direction: row; 
     justify-content: space-between;      
-    margin-top: 10px;
+    
 
 
     & i{
         color:white;
         font-size: 22px;
         text-align: center;
-        text-transform:lowercase;
-        padding:5px;
-        width:100%;
-        border-radius: 3px;
+        text-transform: lowercase;
+        
+        width:100%;        
         box-sizing: border-box;
 
     }
@@ -82,12 +77,14 @@
 
 
 
-.main-header-row__form {
+.l-main-header__search {
     position: relative;
-    margin-top: 60px;
-    bottom: 20px;
-    max-width:90%;
-    padding: 0 30px;
+    margin: 0 15px;
+
+    
+    
+    
+    
     
 
     & form, & input {
@@ -96,8 +93,10 @@
     }
 
     & input{
-    
+        
+        
         padding:5px;
+        margin: 25px 0;
         text-align: left;
         border:none;
         border-radius: 3px;
@@ -106,48 +105,153 @@
         
     }
 
+    
+    
+
  
     
 }
-
-
-    
-.main-header-nav{
+.l-main-header__nav {
     display: none;
 }
-    
-#menu-hamburger{
-    position:fixed;
-    width: 80px;
-    height:80px;
-    right:0px;
-    top:0px;
-    background-color: darken($color-primary, 20);
-    border-radius: 0 0 0 3rem;
-    z-index:999;
-    
+
+
     
 
-    span{
-        display:block;
-        position:relative;
-        height:3px;
-        width:35px;
-        margin:6px auto;
-        
-        background: $color-tertiary;
-        border-radius: 1.15rem ;
-        box-sizing: border-box;
+    
 
+
+    
+    @media screen and (min-width: $breakpoint-tablet) {
+    
+
+        .wrap{
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .wrap-header-desktop{
+            
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            height: 125px;
+            justify-content: space-between;
+            
+            
+        }
+    
+        .l-main-header__logo, .l-main-header__icons, .l-main-header__search{
+            
+            display: flex;
+            
+            align-items: baseline;
+            
+    
+        }
+    
+      
+    
         
-        &:first-child{
-            margin-top: 25px;
+        .l-main-header__search{
+            
+        width: 100%;
+        margin-top: 25px;
+          
+    
+            & input{
+            
+            position: relative;
+            width:100%;
+            display: flex;
+            margin:0;
+            
+    
+            }
+       
+        }
+    
+        
+    
+        
+        .l-main-header__icons{
+            order:3;
+            width:150px;
+        }
+        
+        .l-main-header__nav{
+            display: flex;
+        
+        }
+        .nav-header-desktop{
+            
+            display: flex;
+            
+            width:100%;
+            
+            & ul{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+            
+            
+        
+                & li{
+                display: flex;
+                margin: 0 15px;
+                
+                
+                
+    
+                    & a{
+                    color:white;
+                    padding: 10px;
+                    text-decoration: none;
+                    display: flex;
+                    
+        
+                        &:hover{
+                        color:red;
+                        padding: 10px;
+                        
+                        
+                        }
+
+                        &:active{
+                            color:orange;
+                        }
+                    }
+                }
+    
+            
+            
+            }
+        }
+        
+        
+    }
+
+    @media screen and (min-width: $breakpoint-desktop){
+        .wrap{
+            position: relative;
+            
+            
+            margin:0 auto;
+        }
+        
+        .wrap-header-desktop{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .nav-header-desktop{
+            position: relative;
+            max-width: 90%;
+            margin: 0 auto;
         }
     }
 
-    @media screen and (min-width: $breakpoint-tablet) {
-        display: none;
-        
-    }
-}
+    
+
+
 

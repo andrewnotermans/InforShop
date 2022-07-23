@@ -1,206 +1,31 @@
-.main-content{
-    
+.l-main-content{
+    position: relative;
+    top:0;
+    padding-bottom:40px;
+    padding-top: 20px;
+    margin: 0 auto;
     background-color: rgb(228, 228, 228);
-    margin:0 auto;
-}
-
-.main-content-nav{
-    position: relative;
-    display: inline;
-    top: 30px;
-}
-
-#buttons-home {
-    
-    
-    margin:10px;
-
-    & i{
-        padding: 5px 15px;
-        background-color: white;
-        font-size: 16px;
-
-        
-    }
-}
-
-
-#buttons-current{
-    
-    display: inline;
-    margin:10px;
-    
-}
-
-#buttons-current h3 {
-    color:black;
-    font-size: 14px;
-    padding: 5px 15px;
-    margin:10px;
-    
-    display: inline-block;
-    background-color: white;
-
-    & a{
-        color:black;
-    }
-    
-    
-}
-
-
-
-
-.main-content-form{
-    margin-top: 40px;
-    padding-bottom: 40px ;
-    
-}
-
-
-fieldset{
-    border: none;
-    & .form-title{
-        font-weight: bold;
-        font-size: 24px;
-        color: $color-primary;
-    }
-}
-.form-button-submit{
-    margin-top: 20px;
-}
-
-.form-submit{
-    
-    top: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    padding-block-start: 15px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: white;
-    padding-block-end: 15px;
-
-
-
-    & legend{
-        
-        padding-top:40px;
-    }
-
-}
-
-
-
-
-.form-column{
-    display: flex;
     width:100%;
-    flex-direction: column;
-
-
-}
-
-
-.l-form-border, .l-form-border--fullwrap{
-    display: flex;
-    flex-direction: column;
-
-
-    & label {
-        padding-top:25px;
-        display: flex;
-
-    }
-
-    & input{
-        
-        border: none;
-        border-bottom: 1px blue solid;
-        
-        
-        width: 100%;
-        
-
-    }
+    min-height:100%;
+    
+    
 
     
-}
-.form-button-submit #submit{
-    background-color: #e4e4e4;
-    border-radius: 3px;
-    border:none;
-    padding: 5px 15px;
-
-    &:hover{
-        background-color: darken(#e4e4e4, 20);
-    }
-}
-.form-button-link{
-    
-    background-color: $color-secondary;
-    margin-top: 10px;
-    display: inline-block;
-    border-radius: 5px;
-
-
-    & h2, a{
-    display: inline-block;
-    font-size: 16px;
-    font-family: Calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    padding: 5px 7px;
-    color: white;
-    text-align: center;
-    }
-}
-.google-button   {
    
-    display: inline;
     
-        & #google-button{
-            
-            display: inline;
-            margin-left: 10px;
-            border: 1px $color-primary solid;
-            border-radius: 5px;
-            padding: 9px 5px;
-            
-    
-            & img, h4{
-                
-                height: 25px;
-                width: auto;
-                display: inline;
-                
-                
-                
-
-            }
-
-            & h4{
-                margin-left: 5px;
-                display:inline;
-                
-                font-family: Calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-                font-size: 12px;
-                color:$color-primary;
-            
-            }
-        }
-    }
-
-
-    
+}
 
 
 
 
-
-
-
-
-
-
-
-
+.page-title{
+    font-weight: bold;
+    font-size: 24px;
+    color: $color-primary;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding-top: 20px;
+        
+        
+        
+}

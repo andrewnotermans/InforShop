@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
-    <title>Connexion</title>
+    <title>Mon panier</title>
 </head>
 <body>
     <header class="l-main-header">
@@ -65,7 +65,8 @@
             
         
         
-    </header>       
+    </header>  
+    
     <main class="l-main-content">
         <div class="wrap">
             <div class="l-main-content__nav">
@@ -73,48 +74,69 @@
                     <i class="fas fa-home"></i>
                 </a>
                 <span class="nav-chevron"> > </span>
-            
                 <div id="buttons-current">
-                    <h3><a href="#">Connexion</a></h3>
+                    <h3><a href="#">Mon panier</a></h3>
                 </div>
             </div>
           
             <div class="l-main-content__form">
-                
                 <form id="t-form-main" method="post" action="traitement.php">
-                    <h1 class="page-title">Connexion</h1>                    
+                    
+                    <legend class="page-title">Mon panier</legend>
                     <div class="t-form-main">
-                        <div class="t-form-main__border--desktop">
-                            <label for="email"></label>
-                            <input class="input-field" type="email" name="email" id="email" placeholder="Email"/>
+                        <table class="m-tab-cart">                            
+                            <thead>
+                                <tr>
+                                    <td>Produit</td>
+                                    <td>Quantité</td>
+                                    <td>Prix unitaire</td>
+                                    <td>TVA (21%)</td>
+                                    <td>Total HTVA</td>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <td>Clavier Logitech K860</td>
+                                    <td>
+                                        <form class="l-form-number">
+                                            <input type="number" step="1" value="0" min="0" max="15">
+                                        </form>
+                                    </td>
+                                    <td>100 €</td>
+                                    <td>21</td>
+                                    <td>100 €</th>
+                                
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total HTVA</td>
+                                    <td>TVA</td>
+                                    <td>Total TVA</td>
+                                </tr>
+                                <tr>
+                                    <td>100 €</td>
+                                    <td>21 €</td>
+                                    <td>121 €</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="t-form-main__submit-button">
+                            <form>
+                                <input type="button" name="submit" id="submit" value="Passer la commande" action="traitement.php"/>
+                            </form>
                         </div>
-                    
-                    
-                        <div class="t-form-main__border--desktop">    
-                            <label for="password"></label>
-                            <input class="input-field" type="password" name="password" id="password" placeholder="Password" />
-                        </div>
-                    </div>
-                    <div class="t-form-main__submit-button">
-                        <input class="input-field" type="button" name="submit" id="submit" value="Connexion" action="traitement.php"/>
-                    </div>
-                    <div class="t-form-main__link-button">
-                        <a href="inscription.html">Inscription</a>
+                        
+                        
                         
                     </div>
-                    <div class="google-button"> 
-                        <a href="#" id="google-button">
-                            <img src="./img/1534129544.svg">
-                            <h4>Connexion Google</h4>
-                        </a>
-                        
-                    </div>
-
                     
                 </form>
-            </div>
 
+            </div>
         </div>
+        
     </main>
     <footer class="l-main-footer">
         <div class="wrap">
@@ -124,7 +146,4 @@
         </div>
         
     </footer>
-
-
 </body>
-</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <script src="./main.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="l-main-header">
+
+        <div class="wrap">
+    
+            <div class="wrap-header-desktop">
+                
+                <div class="l-main-header__logo">
+                    <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                </div>  
+                
+                        
+                <div class="l-main-header__icons">
+                    <a href="./connexion.html" id="icons-cart">
+                        
+                        <i class="fas fa-user"></i>
+                        <p>Compte</p>
+                    </a>
+                        
+                    
+                    <a href="./panier.html" id="icons-user">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Panier</p>
+                        
+                    </a>  
+                </div>
+                
+                <div class="l-main-header__search">
+                    <form method="post" action="traitement.php">
+                        
+                        <label for="produit"></label>
+                        <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                        
+                    </form>
+                </div>
+            
+            </div>
+            
+            <div class="l-main-header__nav">
+                <nav class="nav-header-desktop">
+                    <ul class="nav-header-desktop-menu">
+                        <li class="menu-item"><a href="index.html">Accueil</a></li>
+                        <li class="menu-item"><a href="listeproduits.html">Produits</a></li>
+                        <li class="menu-item"><a href="contactus.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                
+            </div> 
+            <div class="background-menu-hamburger">
+                <div id="menu-btn">
+                    <div id="menu-btn__burger"></div>
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+        
+    </header>  
+    <main class="l-main-content">
+        <div class="wrap">
+            
+            <div class="l-main-content__form">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="1061" height="463" id="gmap_canvas" src="https://maps.google.com/maps?q=rue%20saint-laurent%2033%20li%C3%A8ge&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:center;height:463px;width:100%;object-fit: cover;}</style><a href="https://www.embedgooglemap.net">website maps free</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:463px;width:100%;object-fit: cover;}</style></div></div>
+                <form id="t-form-main" method="post" action="traitement.php">
+                    <fieldset>
+                        <legend class="page-title">Contact Us</legend>
+                        <div class="t-form-main--row">
+                            <div class="col 12 col-md-7 col-lg-7">
+                                <div class="t-form-main__border--desktop">
+                                    
+                                    <label for="name">Votre nom & prénom</label>
+                                    <input class="input-field" type="text" name="name" id="name" placeholder="Nom et prénom" required/>
+                                </div>
+                                <div class="t-form-main__border--desktop">
+                                    <label for="email">Votre email</label>
+                                    <input class="input-field" type="email" name="email" id="email" placeholder="Votre email"/ required>
+                                </div>
+                                <div class="t-form-main__border--desktop">
+                                    <label for="phone">Votre téléphone</label>
+                                    <input class="input-field" type="text" name="phone" id="phone" placeholder="Votre téléphone"/ required>
+                                </div>
+                                <div class="t-form-main__border--desktop">
+                                    <label for="questions">De quoi souhaitez-vous parlez</label>
+                                    <input class="input-field" type="text" name="questions" id="questions" placeholder="De quoi souhaitez-vous parler?" required/>
+                                </div>
+                                <div class="t-form-main__border--desktop">
+                                    <label for="more">Expliquez-moi en détail</label>
+                                    <input class="input-field" type="text" name="more" id="more" placeholder="Expliquez-moi en détail" required/>
+                                </div>
+                                <div class="t-form-main__submit-button">
+                                        
+                                    <input class="input-field" type="button" name="submit" id="submit" value="Envoyer" action="traitement.php"/>
+                                        
+                                </div>
+                                
+                            </div>
+                                
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <div class="wrap-flex--md-5">
+                                    <h3>Informations de contact</h3>
+                                    <div class="company-name">
+                                        <p>Inforshop SRL</p>
+                                    </div>
+                                    <h4>Adresse</h4>
+                                    <p>Rue Saint-Laurent 33<br>4000 Liège</p>
+                                    <h4>Téléphone</h4>
+                                    <p>04 365 21 45</p>
+                                    <h4>Horaire</h4>
+                                    <p>Du lundi au vendredi <br>De 9h à 18h</p>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer class="l-main-footer">
+        <div class="wrap">
+            <div class="l-main-footer__title">
+                <p>Inforshop</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>

@@ -12,17 +12,17 @@
     </head>
     <body>
         
-        <header class="main-header">
+        <header class="l-main-header">
 
             <div class="wrap">
         
-                <div class="main-header-row">
+                <div class="wrap-header-desktop">
                     
-                    <div class="main-header-row__logo">
-                            <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                    <div class="l-main-header__logo">
+                        <img src="../public/img/inforshop.png" alt="InforShop_logo">
                     </div>  
                             
-                    <div class="main-header-row__icons">
+                    <div class="l-main-header__icons">
                         <div id="icons-cart">
                             <i class="fas fa-user"></i>
                             <p>Compte</p>
@@ -30,47 +30,59 @@
                         </div>
                         <div id="icons-user">
                             <i class="fas fa-shopping-cart"></i>
-                            <p>Compte</p>
+                            <p>Panier</p>
                             
                         </div>  
                     </div>
                     
-                    <div class="main-header-row__form">
+                    <div class="l-main-header__search">
                         <form method="post" action="traitement.php">
-                            <p>
-                                <label for="produit"></label>
-                                <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
-                            </p>
+                            
+                            <label for="produit"></label>
+                            <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                            
                         </form>
                     </div>
                 
                 </div>
                 
-                <div class="main-header-nav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Produits</a></li>
-                            <li><a href="#">Contacts</a></li>
+                <div class="l-main-header__nav">
+                    <nav class="nav-header-desktop">
+                        <ul class="nav-header-desktop-menu">
+                            <li class="menu-item"><a href="index.html">Accueil</a></li>
+                            <li class="menu-item"><a href="listeproduits.html">Produits</a></li>
+                            <li class="menu-item"><a href="contactus.html">Contacts</a></li>
                         </ul>
                     </nav>
+                    
                 </div> 
-                
-                
-                <div id="menu-hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="background-menu-hamburger">
+                    <div id="menu-btn">
+                        <div id="menu-btn__burger"></div>
+                        
+                    </div>
                 </div>
             </div>
-        </header>      
-            <main>
-
-            </main>
-            <footer>
-
-            </footer>
+                
+            
+            
+        </header>  
         
-    </body>
+             
+        <main class="l-main-content">
+            <div id="logo-main-page">
+                <img src="./img/inforshop.png">
+            </div>
+        </main>
+        <footer class="l-main-footer">
+            <div class="wrap">
+                <div class="main-footer__title">
+                    <p>Inforshop</p>
+                </div>
+            </div>
+            
+        </footer>
+    
+</body>
     
 </html>
