@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <title>PC Gaming</title>
+</head>
+<body>
+    <header class="l-main-header">
+
+        <div class="wrap">
+    
+            <div class="wrap-header-desktop">
+                
+                <div class="l-main-header__logo">
+                    <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                </div>  
+                        
+                <div class="l-main-header__icons">
+                    <a href="./connexion.html" id="icons-cart">
+                        
+                        <i class="fas fa-user"></i>
+                        <p>Compte</p>
+                    </a>
+                        
+                    
+                    <a href="./panier.html" id="icons-user">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Panier</p>
+                        
+                    </a>  
+                </div>
+                
+                <div class="l-main-header__search">
+                    <form method="post" action="traitement.php">
+                        
+                        <label for="produit"></label>
+                        <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                        
+                    </form>
+                </div>
+            
+            </div>
+            
+            <div class="l-main-header__nav">
+                <nav class="nav-header-desktop">
+                    <ul class="nav-header-desktop-menu">
+                        <li class="menu-item"><a href="index.html">Accueil</a></li>
+                        <li class="menu-item"><a href="listeproduits.html">Produits</a></li>
+                        <li class="menu-item"><a href="contactus.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                
+            </div> 
+            <div class="background-menu-hamburger">
+                <div id="menu-btn">
+                    <div id="menu-btn__burger"></div>
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+        
+    </header>  
+    <main class="l-main-content">
+        <div class="wrap">
+            <div class="l-main-content__nav">
+                <div id="buttons-home">
+                    <i class="fas fa-home"></i>
+                </div>
+
+                <span class="nav-chevron"> > </span>
+            
+                <div id="buttons-current">
+                    <h3>PC de bureau</h3>
+                </div>
+            </div>
+            <div class="l-main-content__form--filter">
+                <form class="t-form-filter" method="post" action="traitement.php">
+                    
+                    <h3>Filter</h3>
+                    <div class="wrap-form-template"></div>
+                    <fieldset class="fieldset-filter">Marques</fieldset>
+                    
+
+                    <div class="t-form-filter__checkbox">
+                        
+                        <span>
+                            <input type="checkbox" name="Razer" id="razer"/>
+                            <label for="razer">Razer</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="Logitech" id="logitech"/>
+                            <label for="logitech">Logitech</label>
+                        </span>
+                        <span>
+
+                            <input type="checkbox" name="HP" id="hp"/>
+                            <label for="hp">HP</label>
+                        </span>
+                        
+                    </div>
+                    <fieldset class="fieldset-filter">Prix</fieldset>
+                    <div class="t-form-filter__range">
+
+                        <input type="number" step="1" value="0" min="0" max="500">
+                        <input type="number" step="1" value="500" min="500" max="2500">
+                        <input type="range" name="price" min="0" max="1500">
+                    </div>
+                    <fieldset class="fieldset-filter">Disponibilité</fieldset>
+                    <div class="t-form-filter__checkbox">
+                        <span>
+                            <input type="checkbox" name="En stock" id="disponibilite">
+                            <label for="disponibilite">En stock</label>
+                            
+                        </span>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="nav-pagination">
+                <ul>
+                    
+                    <li>
+                    <a class="page-link" href="./listeproduits-page1.html">1</a>  
+                    </li>
+
+                    <li>
+                    <a class="page-link" href="./listeproduits-page2.html">2</a>  
+                    </li>
+
+                    <li>
+                    <a class="page-link" href="./listeproduits-page3.html">3</a>  
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="l-main-content__grid">
+                
+                        <div class="grid-box-item">
+                            <div class="box-wrap">
+                                <div class="grid-box-item__image">
+                                    <img src="./img/hp_pavillon.jpg" alt="hp_pavillon">
+                                </div>
+                                <div class="grid-box-item__name">HP Pavaillon Gaming</div>
+                                <div class="grid-box-item__type">Parfait PC pour le gaming</div>
+                                <div class="grid-box-item__stock">15 en stock</div>
+                                <div class="grid-box-item__price">1750 €
+                                    <div class="grid-box-item__button-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+                
+                
+            </div>
+                
+            
+        </div>
+            
+    </main>
+    <footer class="l-main-footer">
+        <div class="wrap">
+            <div class="l-main-footer__title">
+                <p>Inforshop</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
