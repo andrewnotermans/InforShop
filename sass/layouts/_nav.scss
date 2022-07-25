@@ -3,62 +3,53 @@ li{
 }
 
 .background-menu-hamburger{
-    display: flex;
+   
     position:fixed;
     width: 80px;
     height:80px;
     right:0px;
     top:0px;
+    
     background-color: darken($color-primary, 20);
     border-radius: 0 0 0 2rem;
     
+    
 }
+
 
 #menu-btn{
-    position: relative;
-    display: flex;
-    width: 80px;
-    height:80px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    
-}
-
-#menu-btn__burger, #menu-btn__burger::before, #menu-btn__burger::after{
-    width: 50px;
-    height: 6px;
-    background-color: $color-tertiary;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-    
-}
-
-#menu-btn__burger::before, #menu-btn__burger::after{
-    content:'';
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+    }
+
+
+
+ #menu-btn:before, #menu-btn:after, #menu-btn #menu-btn__burger{
+    position: relative;
+    height: 6px;
+    content: '';
+    display: block;
+    margin: 7px 0;
+    background-color: $color-tertiary;
+    border-radius: 3px;
+    transition: 0.5s;
     
 }
 
-#menu-btn__burger::before{
-    transform: translateY(-16px);
-}
-#menu-btn__burger::after{
-    transform: translateY(16px);
+
+#menu-btn:hover #menu-btn__burger{
+    transform:translateX(-50px) scale(0);
 }
 
-#menu-btn.is-active #menu-btn__burger{
-    transform:translateX(-50px);
-    background: transparent;
-    box-shadow: none;
+#menu-btn:hover:before{
+    transform: translateY(12px) rotate(135deg) ;
 }
-
-#menu-btn.is-active #menu-btn__burger::before{
-    transform: rotate(45deg) translate(35px, -35px);
-}
-#menu-btn.is-active #menu-btn__burger::after{
-    transform: rotate(-45deg) translate(35px, 35px);
+#menu-btn:hover:after{
+    transform: translateY(-12px) rotate(-135deg) ;
 }
 
 
