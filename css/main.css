@@ -47,6 +47,13 @@ body {
   margin: 220px auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .wrap {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
 .l-main-content__nav {
   position: relative;
   margin-top: 20px;
@@ -318,10 +325,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .wrap {
-    position: relative;
-    margin: 0 auto;
-  }
   .wrap-header-desktop {
     max-width: 100%;
     margin: 0 auto;

@@ -106,22 +106,11 @@
     }
 
     
-    
-
- 
-    
 }
 .l-main-header__navbar {
     display: none;
 }
 
-
-    
-
-    
-
-
-    
     @media screen and (min-width: $breakpoint-tablet) {
     
 
@@ -149,9 +138,7 @@
             
     
         }
-    
-      
-    
+
         
         .l-main-header__search{
             
@@ -171,9 +158,6 @@
        
         }
     
-        
-    
-        
         .l-main-header__icons{
             order:3;
             width:150px;
@@ -233,12 +217,6 @@
     }
 
     @media screen and (min-width: $breakpoint-desktop){
-        .wrap{
-            position: relative;
-            
-            
-            margin:0 auto;
-        }
         
         .wrap-header-desktop{
             max-width: 100%;
