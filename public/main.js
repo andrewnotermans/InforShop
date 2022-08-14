@@ -1,6 +1,6 @@
 // récupération du dom
-const menuHamDom = document.getElementById("menu-btn");
-const menuMainDom = document.getElementsByClassName("nav-header-desktop-menu");
+const menuHamDom = document.getElementById("burgerMenu");
+const menuMainDom = document.getElementById("menuMain");
 
 // ajout/suppression class au click
 if(menuHamDom !== null && menuMainDom !== null)

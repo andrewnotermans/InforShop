@@ -2,7 +2,7 @@ li{
     list-style-type: none;
 }
 
-.background-menu-hamburger{
+.menu-hamburger{
    
     position:fixed;
     width: 80px;
@@ -17,7 +17,7 @@ li{
 }
 
 
-#menu-btn{
+#menu-hamburger__btn{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,7 +28,7 @@ li{
 
 
 
- #menu-btn:before, #menu-btn:after, #menu-btn #menu-btn__burger{
+ #menu-hamburger__btn:before, #menu-hamburger__btn:after, #menu-hamburger__btn #menu-burger-bar{
     position: relative;
     height: 6px;
     content: '';
@@ -41,20 +41,20 @@ li{
 }
 
 
-#menu-btn:hover #menu-btn__burger{
+#menu-hamburger__btn:hover #menu-burger-bar{
     transform:translateX(-50px) scale(0);
 }
 
-#menu-btn:hover:before{
+#menu-hamburger__btn:hover:before{
     transform: translateY(12px) rotate(135deg) ;
 }
-#menu-btn:hover:after{
+#menu-hamburger__btn:hover:after{
     transform: translateY(-12px) rotate(-135deg) ;
 }
 
 
 @media screen and (min-width: $breakpoint-tablet) {
-.background-menu-hamburger{
+.menu-hamburger{
     display: none;
 }
     

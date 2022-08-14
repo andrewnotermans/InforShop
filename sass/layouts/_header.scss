@@ -111,7 +111,7 @@
  
     
 }
-.l-main-header__nav {
+.l-main-header__navbar {
     display: none;
 }
 
@@ -179,11 +179,11 @@
             width:150px;
         }
         
-        .l-main-header__nav{
+        .l-main-header__navbar{
             display: flex;
         
         }
-        .nav-header-desktop{
+        .navbar{
             
             display: flex;
             
@@ -244,7 +244,7 @@
             max-width: 100%;
             margin: 0 auto;
         }
-        .nav-header-desktop{
+        .navbar{
             position: relative;
             max-width: 90%;
             margin: 0 auto;
