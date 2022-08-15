@@ -1,61 +1,68 @@
-li{
-    list-style-type: none;
-}
 
-.menu-hamburger{
-   
+
+
+.nav-menu{
     position:fixed;
-    width: 80px;
-    height:80px;
-    right:0px;
-    top:0px;
-    
-    background-color: darken($color-primary, 20);
-    border-radius: 0 0 0 2rem;
-    
-    
-}
+    top:-100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-primary;
+    width:100%;
+    height:100%;
+    text-align: center;
+    transition: 0.5s;
 
-
-#menu-hamburger__btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    width: 50px;
+    &.active{
+        top:0;
     }
 
 
+}
 
- #menu-hamburger__btn:before, #menu-hamburger__btn:after, #menu-hamburger__btn #menu-burger-bar{
-    position: relative;
-    height: 6px;
-    content: '';
-    display: block;
-    margin: 7px 0;
-    background-color: $color-tertiary;
-    border-radius: 3px;
-    transition: 0.5s;
+.nav-item{
+    margin:1.6rem 0;
+}
+
+.nav-link{
+    color:white;
+
+    &:hover{
+        border-bottom: 3px $color-tertiary solid;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet){
+
+    .l-main-header__navbar {
+        display: block;
+        
+    } 
     
+        
+    .nav-menu{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        background-color: transparent;
+        
+    }
+            
+    .nav-link{
+        
+    color:white;
+    margin-left: 4rem;
+
+        &:hover{
+        
+        padding-bottom: 10px;
+        border-bottom: 3px $color-tertiary solid;
+        
+        
+        }
+
+       
+    }
 }
 
-
-#menu-hamburger__btn:hover #menu-burger-bar{
-    transform:translateX(-50px) scale(0);
-}
-
-#menu-hamburger__btn:hover:before{
-    transform: translateY(12px) rotate(135deg) ;
-}
-#menu-hamburger__btn:hover:after{
-    transform: translateY(-12px) rotate(-135deg) ;
-}
-
-
-@media screen and (min-width: $breakpoint-tablet) {
-.menu-hamburger{
-    display: none;
-}
-    
-}

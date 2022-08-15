@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    
     <link rel="stylesheet" href="../css/main.css">
     <title>Commande</title>
 </head>
@@ -48,7 +48,7 @@
             
             <div class="l-main-header__navbar">
                 <nav class="navbar">
-                    <ul class="navbar-menu">
+                    <ul class="nav-menu">
                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="listeproduits.html">Produits</a></li>
                         <li class="nav-item"><a class="nav-link" href="contactus.html">Contacts</a></li>
@@ -57,8 +57,10 @@
                 
             </div> 
             <div class="menu-hamburger">
-                <div id="menu-hamburger__btn">
-                    <span id="menu-burger-bar"></span>
+                <div id="menu-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                     
                 </div>
             </div>
@@ -66,7 +68,7 @@
             
         
         
-    </header>         
+    </header>
     
 
     <main class="l-main-content">
@@ -77,12 +79,12 @@
                 </a>
                 
                 <span class="nav-chevron"> > </span>
-                <div id="buttons-current">
+                <div class="buttons-current">
                     <a href="panier.html"><h3>Mon panier</h3></a>
                 </div>
                 <span class="nav-chevron"> > </span>
                 
-                <div id="buttons-current">
+                <div class="buttons-current">
                     <h3>Commande</h3>
                 </div>
             </div>
@@ -96,10 +98,10 @@
                         <div class="t-form-main">
                             <div class="t-form-main--row">
                                 <div class="t-form-main__border">
-                                    <label for="rue-livraison">Rue*</label>
+                                    <label for="rue-liv">Rue*</label>
                                     <div class="input-icons">
                                         <i class="fas fa-home"> </i>
-                                        <input class="input-field" type="text" name="rue" id="rue-livraison" placeholder="Rue" required/> 
+                                        <input class="input-field" type="text" name="rue" id="rue-liv" placeholder="Rue" required/> 
                                        
                                     </div>                                
                                                                  
@@ -154,44 +156,44 @@
                         <div class="t-form-main">
                             <div class="t-form-main--row">
                                 <div class="t-form-main__border">
-                                    <label for="rue-livraison">Rue</label>
+                                    <label for="rue-fact">Rue</label>
                                     <div class="input-icons">
                                         <i class="fas fa-home"> </i>
-                                        <input class="input-field" type="text" name="rue" id="rue-livraison" placeholder="Rue"/> 
+                                        <input class="input-field" type="text" name="rue" id="rue-fact" placeholder="Rue"/> 
                                        
                                     </div>                                
                                                                  
                                 </div>
                                 <div class="t-form-main__border">
-                                    <label for="numero-liv">Numéro de maisson</label>
+                                    <label for="numero-fact">Numéro de maisson</label>
                                     <div class="input-icons">
                                         <i class="fas fa-tag"></i>
-                                        <input class="input-field" type="text" name="numero" id="numero-liv" placeholder="Numéro de maison"/>
+                                        <input class="input-field" type="text" name="numero" id="numero-fact" placeholder="Numéro de maison"/>
                                     
                                     </div>
                                 </div>
                             </div>
                             <div class="t-form-main--row">
                                 <div class="t-form-main__border">
-                                    <label for="localite-liv">Localité</label>
+                                    <label for="localite-fact">Localité</label>
                                     <div class="input-icons">
                                         <i class="fas fa-city"></i>
-                                        <input class="input-field" type="text" name="localite" id="localite-liv" placeholder="Localité"/>
+                                        <input class="input-field" type="text" name="localite" id="localite-fact" placeholder="Localité"/>
                                     
                                     </div>
                                 </div>
                                 <div class="t-form-main__border">
-                                    <label for="postal-liv">Code postal</label>
+                                    <label for="postal-fact">Code postal</label>
                                     <div class="input-icons">
                                         <i class="fas fa-city"></i>
-                                        <input class="input-field" type="text" name="postal" id="postal-liv" placeholder="Code postal"/>
+                                        <input class="input-field" type="text" name="postal" id="postal-fact" placeholder="Code postal"/>
                                 
                                     </div>
                                 </div>
                             </div>
                             <div class="t-form-main__border">
-                                <label for="pays-liv">Pays</label>
-                                <select name="pays" id="pays-liv">
+                                <label for="pays-fact">Pays</label>
+                                <select name="pays" id="pays-fact">
                                     <option value="france">France</option>
                                     <option value="espagne">Espagne</option>
                                     <option value="italie">Italie</option>
@@ -234,10 +236,11 @@
     </main>
     <footer class="l-main-footer">
         <div class="wrap">
-            <div class="main-footer__title">
+            <div class="l-main-footer__title">
                 <p>Inforshop</p>
             </div>
         </div>
     </footer>
 </body>
+<script src="./main.js"></script>
 </html>

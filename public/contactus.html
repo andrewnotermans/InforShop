@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/grid.css">
-    <script src="./main.js"></script>
+    
     <title>Contact Us</title>
 </head>
 <body>
@@ -49,7 +49,7 @@
             
             <div class="l-main-header__navbar">
                 <nav class="navbar">
-                    <ul class="navbar-menu">
+                    <ul class="nav-menu">
                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="listeproduits.html">Produits</a></li>
                         <li class="nav-item"><a class="nav-link" href="contactus.html">Contacts</a></li>
@@ -58,8 +58,10 @@
                 
             </div> 
             <div class="menu-hamburger">
-                <div id="menu-hamburger__btn">
-                    <span id="menu-burger-bar"></span>
+                <div id="menu-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                     
                 </div>
             </div>
@@ -67,7 +69,8 @@
             
         
         
-    </header>       
+    </header> 
+
     <main class="l-main-content">
         <div class="wrap">
             
@@ -85,11 +88,11 @@
                                 </div>
                                 <div class="t-form-main__border--desktop">
                                     <label for="email">Votre email</label>
-                                    <input class="input-field" type="email" name="email" id="email" placeholder="Votre email"/ required>
+                                    <input class="input-field" type="email" name="email" id="email" placeholder="Votre email" required/>
                                 </div>
                                 <div class="t-form-main__border--desktop">
                                     <label for="phone">Votre téléphone</label>
-                                    <input class="input-field" type="text" name="phone" id="phone" placeholder="Votre téléphone"/ required>
+                                    <input class="input-field" type="text" name="phone" id="phone" placeholder="Votre téléphone" required/>
                                 </div>
                                 <div class="t-form-main__border--desktop">
                                     <label for="questions">De quoi souhaitez-vous parlez</label>
@@ -101,7 +104,7 @@
                                 </div>
                                 <div class="t-form-main__submit-button">
                                         
-                                    <input class="input-field" type="button" name="submit" id="submit" value="Envoyer" action="traitement.php"/>
+                                    <input class="input-field" type="button" name="submit" id="submit" value="Envoyer" />
                                         
                                 </div>
                                 
@@ -141,3 +144,5 @@
         
     </footer>
 </body>
+<script src="./main.js"></script>
+</html>

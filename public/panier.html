@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    
     <link rel="stylesheet" href="../css/main.css">
     <title>Mon panier</title>
 </head>
@@ -45,28 +45,33 @@
                 </div>
             
             </div>
+        
             
-            <div class="l-main-header__nav">
-                <nav class="nav-header-desktop">
-                    <ul class="nav-header-desktop-menu">
-                        <li class="menu-item"><a href="index.html">Accueil</a></li>
-                        <li class="menu-item"><a href="listeproduits.html">Produits</a></li>
-                        <li class="menu-item"><a href="contactus.html">Contacts</a></li>
+            <div class="l-main-header__navbar">
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="listeproduits.html">Produits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contacts</a></li>
                     </ul>
                 </nav>
                 
             </div> 
-            <div class="background-menu-hamburger">
-                <div id="menu-btn">
-                    <div id="menu-btn__burger"></div>
+            
+            <div class="menu-hamburger">
+                <div id="menu-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                     
                 </div>
             </div>
         </div>
+        
             
         
         
-    </header>  
+    </header>   
     
     <main class="l-main-content">
         <div class="wrap">
@@ -75,7 +80,7 @@
                     <i class="fas fa-home"></i>
                 </a>
                 <span class="nav-chevron"> > </span>
-                <div id="buttons-current">
+                <div class="buttons-current">
                     <h3><a href="#">Mon panier</a></h3>
                 </div>
             </div>
@@ -83,7 +88,7 @@
             <div class="l-main-content__form">
                 <form id="t-form-main" method="post" action="traitement.php">
                     
-                    <legend class="page-title">Mon panier</legend>
+                    <h1 class="page-title">Mon panier</h1>
                     <div class="t-form-main">
                         <table class="m-tab-cart">                            
                             <thead>
@@ -100,23 +105,27 @@
                                 <tr>
                                     <td>Clavier Logitech K860</td>
                                     <td>
-                                        <form class="l-form-number">
+                                        <div class="l-form-number">
                                             <input type="number" step="1" value="0" min="0" max="15">
-                                        </form>
+                                        </div>
                                     </td>
                                     <td>100 €</td>
                                     <td>21</td>
-                                    <td>100 €</th>
+                                    <td>100 €</td>
                                 
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
+                                    <td></td>
+                                    <td></td>
                                     <td>Total HTVA</td>
                                     <td>TVA</td>
                                     <td>Total TVA</td>
                                 </tr>
                                 <tr>
+                                    <td></td>
+                                    <td></td>
                                     <td>100 €</td>
                                     <td>21 €</td>
                                     <td>121 €</td>
@@ -124,9 +133,9 @@
                             </tfoot>
                         </table>
                         <div class="t-form-main__submit-button">
-                            <form>
-                                <input type="button" name="submit" id="submit" value="Passer la commande" action="traitement.php"/>
-                            </form>
+                            
+                            <input type="button" name="submit" id="submit" value="Passer la commande"/>
+                            
                         </div>
                         
                         
@@ -148,3 +157,5 @@
         
     </footer>
 </body>
+<script src="./main.js"></script>
+</html>

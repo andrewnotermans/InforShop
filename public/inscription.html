@@ -1,149 +1,152 @@
     <!DOCTYPE html>
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
-        <script src="./main.js"></script>
-        <link rel="stylesheet" href="../css/main.css">
-        <title>Inscription</title>
-    </head>
-    <body>
-        <header class="l-main-header">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+            
+            <link rel="stylesheet" href="../css/main.css">
+            <title>Inscription</title>
+        </head>
+        <body>
+            <header class="l-main-header">
 
-            <div class="wrap">
-        
-                <div class="wrap-header-desktop">
+                <div class="wrap">
+            
+                    <div class="wrap-header-desktop">
+                        
+                        <div class="l-main-header__logo">
+                            <img src="../public/img/inforshop.png" alt="InforShop_logo">
+                        </div>  
+                                
+                        <div class="l-main-header__icons">
+                            <a href="./connexion.html" id="icons-cart">
+                                
+                                <i class="fas fa-user"></i>
+                                <p>Compte</p>
+                            </a>
+                                
+                            
+                            <a href="./panier.html" id="icons-user">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Panier</p>
+                                
+                            </a>  
+                        </div>
+                        
+                        <div class="l-main-header__search">
+                            <form method="post" action="traitement.php">
+                                
+                                <label for="produit"></label>
+                                <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
+                                
+                            </form>
+                        </div>
                     
-                    <div class="l-main-header__logo">
-                        <img src="../public/img/inforshop.png" alt="InforShop_logo">
-                    </div>  
+                    </div>
+                    
+                    <div class="l-main-header__navbar">
+                        <nav class="navbar">
+                            <ul class="nav-menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="listeproduits.html">Produits</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contactus.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div> 
+                    <div class="menu-hamburger">
+                        <div id="menu-hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
                             
-                    <div class="l-main-header__icons">
-                        <a href="./connexion.html" id="icons-cart">
-                            
-                            <i class="fas fa-user"></i>
-                            <p>Compte</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+                
+            </header> 
+
+
+            <main class="l-main-content">
+                <div class="wrap">
+                    <div class="l-main-content__nav">
+                        <a id="buttons-home" href="index.html">
+                            <i class="fas fa-home"></i>
                         </a>
-                            
-                        
-                        <a href="./panier.html" id="icons-user">
-                            <i class="fas fa-shopping-cart"></i>
-                            <p>Panier</p>
-                            
-                        </a>  
-                    </div>
+                        <span class="nav-chevron"> > </span>
                     
-                    <div class="l-main-header__search">
-                        <form method="post" action="traitement.php">
+                        <div class="buttons-current">
+                            <h3><a href="#">Inscription</a></h3>
+                        </div>
+                    </div>
+                    <div class="l-main-content__form">
+                        <form id="t-form-main" method="post" action="traitement.php">
                             
-                            <label for="produit"></label>
-                            <input type="text" name="produit" id="produit" placeholder="Rechercher un produit">
-                            
+                            <h1 class="page-title">Inscription</h1>
+                            <div class="t-form-main">
+                                <div class="t-form-main__border">
+                                    <label for="email">Email</label>
+                                    <input class="input-field" type="email" name="email" id="email" placeholder=""/>
+                                </div>
+                                <div class="t-form-main--row">
+                                    <div class="t-form-main__border">
+                                        <label for="password">Password</label>
+                                        <input class="input-field" type="password" name="password" id="password" />
+                                    </div>
+                                    <div class="t-form-main__border">
+                                        <label for="password-confirm">Password</label>
+                                        <input class="input-field" type="password" name="password-confirm" id="password-confirm" />
+                                    </div>
+                                </div>
+                                <div class="t-form-main--row">
+                                    <div class="t-form-main__border">
+                                        <label for="prenom">Prénom</label>
+                                        <input class="input-field" type="text" name="prenom" id="prenom" />
+                                    </div>
+                                    <div class="t-form-main__border">
+                                        <label for="nom">Nom</label>
+                                        <input class="input-field" type="text" name="nom" id="nom" />
+                                    </div>
+                                </div>
+                                <div class="t-form-main__border">
+                                    <label for="datenaissance">Date de naissance</label>
+                                    <input class="input-field" type="date" name="datenaissance" id="datenaissance" />
+                                </div>
+                                <div class="t-form-border__border">
+                                    <span>
+                                        <input class="input-field" type="checkbox" name="acceptCgv" id="acceptCvg"/>
+                                        <label for="acceptCvg">"J'ai lu et j'accepte les CVG"</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="t-form-main__submit-button">
+                                
+                                <span><input type="button" name="submit" id="submit" value="Inscription"/></span>
+                                
+                            </div>
+        
                         </form>
-                    </div>
-                
-                </div>
-                
-                <div class="l-main-header__navbar">
-                    <nav class="navbar">
-                        <ul class="navbar-menu">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="listeproduits.html">Produits</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contactus.html">Contacts</a></li>
-                        </ul>
-                    </nav>
-                    
-                </div> 
-                <div class="menu-hamburger">
-                    <div id="menu-hamburger__btn">
-                        <span id="menu-burger-bar"></span>
+                        
                         
                     </div>
+
+                    
                 </div>
-            </div>
                 
-            
-            
-        </header>            
-
-
-        <main class="l-main-content">
-            <div class="wrap">
-                <div class="l-main-content__nav">
-                    <a id="buttons-home" href="index.html">
-                        <i class="fas fa-home"></i>
-                    </a>
-                    <span class="nav-chevron"> > </span>
-                
-                    <div id="buttons-current">
-                        <h3><a href="#">Inscription</a></h3>
+            </main>
+            <footer class="l-main-footer">
+                <div class="wrap">
+                    <div class="l-main-footer__title">
+                        <p>Inforshop</p>
                     </div>
                 </div>
-                <div class="l-main-content__form">
-                    <form id="t-form-main" method="post" action="traitement.php">
-                        
-                        <h1 class="page-title">Inscription</h1>
-                        <div class="t-form-main">
-                            <div class="t-form-main__border">
-                                <label for="email">Email</label>
-                                <input class="input-field" type="email" name="email" id="email" placeholder=""/>
-                            </div>
-                            <div class="t-form-main--row">
-                                <div class="t-form-main__border">
-                                    <label for="password">Password</label>
-                                    <input class="input-field" type="password" name="password" id="password" />
-                                </div>
-                                <div class="t-form-main__border">
-                                    <label for="password-confirm">Password</label>
-                                    <input class="input-field" type="password" name="password-confirm" id="password-confirm" />
-                                </div>
-                            </div>
-                            <div class="t-form-main--row">
-                                <div class="t-form-main__border">
-                                    <label for="prenom">Prénom</label>
-                                    <input class="input-field" type="text" name="prenom" id="prenom" />
-                                </div>
-                                <div class="t-form-main__border">
-                                    <label for="nom">Nom</label>
-                                    <input class="input-field" type="text" name="nom" id="nom" />
-                                </div>
-                            </div>
-                            <div class="t-form-main__border">
-                                <label for="datenaissance">Date de naissance</label>
-                                <input class="input-field" type="date" name="datenaissance" id="datenaissance" />
-                            </div>
-                            <div class="t-form-border__border">
-                                <span>
-                                    <input class="input-field" type="checkbox" name="acceptCgv" id="acceptCvg"/>
-                                    <label for="acceptCvg">"J'ai lu et j'accepte les CVG"</label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="t-form-main__submit-button">
-                            
-                            <span><input type="button" name="submit" id="submit" value="Inscription"/></span>
-                            
-                        </div>
-    
-                    </form>
-                    
-                    
-                </div>
-
                 
-            </div>
-            
-        </main>
-        <footer class="l-main-footer">
-            <div class="wrap">
-                <div class="l-main-footer__title">
-                    <p>Inforshop</p>
-                </div>
-            </div>
-            
-        </footer>
+            </footer>
 
-    </body>
+        </body>
+        <script src="./main.js"></script>
     </html>

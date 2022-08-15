@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    
-}
-
 
 
 
@@ -107,9 +102,7 @@
 
     
 }
-.l-main-header__navbar {
-    display: none;
-}
+
 
     @media screen and (min-width: $breakpoint-tablet) {
     
@@ -163,58 +156,7 @@
             width:150px;
         }
         
-        .l-main-header__navbar{
-            display: flex;
         
-        }
-        .navbar{
-            
-            display: flex;
-            
-            width:100%;
-            
-            & ul{
-                display: flex;
-                width: 100%;
-                flex-direction: row;
-                justify-content: flex-start;
-            
-            
-        
-                & li{
-                display: flex;
-                margin: 0 15px;
-                
-                
-                
-    
-                    & a{
-                    color:white;
-                    padding: 10px;
-                    text-decoration: none;
-                    display: flex;
-                    
-        
-                        &:hover{
-                        color:red;
-                        padding: 10px;
-                        
-                        
-                        }
-
-                        &:active{
-                            color:orange;
-                        }
-                    }
-                }
-    
-            
-            
-            }
-        }
-        
-        
-    }
 
     @media screen and (min-width: $breakpoint-desktop){
         
@@ -222,14 +164,10 @@
             max-width: 100%;
             margin: 0 auto;
         }
-        .navbar{
-            position: relative;
-            max-width: 90%;
-            margin: 0 auto;
-        }
+        
     }
 
     
 
-
+    }
 
