@@ -14,7 +14,7 @@
 
         <div class="wrap">
     
-            <div class="wrap-header-desktop">
+            <div class="flex-main-header">
                 
                 <div class="l-main-header__logo">
                     <img src="../public/img/inforshop.png" alt="InforShop_logo">
@@ -50,7 +50,7 @@
                 <nav class="navbar">
                     <ul class="nav-menu">
                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="listeproduits.html">Produits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="listeproduits-page1.html">Produits</a></li>
                         <li class="nav-item"><a class="nav-link" href="contactus.html">Contacts</a></li>
                     </ul>
                 </nav>
@@ -88,13 +88,13 @@
             <div class="l-main-content__form">
                 <form class="form-template" method="post" action="traitement.php">
                     
-                    <legend class="page-title">Commande</legend>
+                    <div class="page-title">Commande</div>
                     <h1 class="product-title">Ecran AOC Gaming 144hz</h1>
                     <div class="flex-product-presentation">
                         
                         <div class="flex-product-presentation__image">
                             
-                            <img id="product-image" src="./img/ecrangaming.jpg">
+                            <img id="product-image" src="./img/ecrangaming.jpg" alt="pc-gamer">
                         </div>
                         <div class="flex-product-presentation__description">
                             <div class="half-flex-column-2">
@@ -106,12 +106,12 @@
                                         <li class="price">395 €</li>
                                         <li class="text">15 en stock</li>
                                         <li class="add-quantity">
-                                            <form class="l-form-number">
+                                            <div class="l-form-number">
                                                 <input type="number" step="1" value="0" min="0" max="15">
                                                 <div id="cart-button">
                                                     <p>Ajouter au panier</p>
                                                 </div>
-                                            </form>
+                                            </div>
                                         </li>
                                         
                                         <li class="text">noir</li>
